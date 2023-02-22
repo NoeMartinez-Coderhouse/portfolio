@@ -63,6 +63,7 @@ body{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    width: 100%;
     background-color: #D5F2EE;
 }
 
@@ -147,4 +148,59 @@ body{
 .footer-grid-copyright-logo{
     width: 12px;
     height: 12px;
+}
+
+/* 
+************************
+* MEGA QUERIES: TABLET *
+************************
+*/
+@media  (max-width: 768px) {
+    .header-grid-logo{
+        font-size: 30px;
+        width: 120px;
+    }
+
+    .home-col-1 img{
+        width: 300px;
+        height: 580px;
+    }
+
+    .home-col-2{
+        width: 300px;
+        height: 580px;
+    }
+}
+
+/* 
+************************
+* MEGA QUERIES: MOBILE *
+************************
+*/
+@media  (max-width: 320px) {
+    .header-grid-container{
+        height: 300px;
+        grid-template-columns: 100%;
+    }
+
+    .home-col-1 img{
+        width: 280px;
+        height: 480px;
+    }
+
+    .home-col-2{
+        width: 280px;
+        height: 480px;
+    }
+
+    .footer-grid-container{
+        grid-template-columns: 100%;
+        grid-template-columns: auto;
+        height: 300px;
+        gap: 15px;
+        justify-content: center;
+        justify-items: center;
+        align-content:  center;
+        align-items: center;
+    }
 }

@@ -16,6 +16,7 @@ background-color: #D5F2EE;
 
 * Color de fuente
 color: #3CACAE;
+color: #FFFFFF; --blanco
 */
 *{
     margin: 0;
@@ -73,13 +74,13 @@ body{
 }
 
 .home-col-1 img{
-    width: 390px;
-    height: 680px;
+    width: 490px;
+    height: 880px;
 }
 
 .home-col-2{
-    width: 390px;
-    height: 680px;
+    width: 490px;
+    height: 880px;
     background-color: rgba(20, 109, 135, 0.19);
     text-align: center;
     align-items: center;
@@ -150,6 +151,71 @@ body{
     height: 12px;
 }
 
+.about-me-grid-container{
+    display: grid;
+    grid-template-columns: 335px 580px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas:
+    "about-me-h1 about-me-h2"
+    "span about-me-p";
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: #D5F2EE;
+}
+
+span{
+    grid-area: span;
+    background-color: #D5F2EE;
+}
+
+.about-me-h1{
+    grid-area: about-me-h1;
+    background-color: #198597;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 55% 31% 78% 31%;
+}
+
+.about-me-h2{
+    grid-area: about-me-h2;
+    background-color: #EFFEFD;
+    font-weight: 300;
+    color: #3CACAE;
+    padding: 45% 15% 2% 15%;
+}
+
+.about-me-p{
+    grid-area: about-me-p;
+    background-color: #EFFEFD;
+    font-weight: 100;
+    color: #3CACAE;
+    padding: 0% 10% 5% 10%;
+}
+
+.about-me-skills-grid-container{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #EFFEFD;
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+}
+
+.about-me-skill{
+    width: 103px;
+    height: 108px;
+}
+
+.about-me-skill-text{
+    font-weight: 500;
+    color: #3CACAE;
+}
+
 /* 
 ************************
 * MEGA QUERIES: TABLET *
@@ -169,6 +235,23 @@ body{
     .home-col-2{
         width: 300px;
         height: 580px;
+    }
+
+    .about-me-grid-container{
+        grid-template-columns: 235px 380px;
+        grid-template-rows: 300px 300px;
+    }
+    
+    .about-me-h1{
+        padding: 121% 20% 30% 20%;
+    }
+    
+    .about-me-h2{
+        padding: 45% 15% 2% 15%;
+    }
+    
+    .about-me-p{
+        padding: 0% 10% 5% 10%;
     }
 }
 
@@ -202,5 +285,51 @@ body{
         justify-items: center;
         align-content:  center;
         align-items: center;
+    }
+
+    .about-me-grid-container{
+        grid-template-columns: 100%;
+        /* grid-template-rows: 100%; */
+        width: 100%;
+        height: 1000px;
+        grid-template-areas:
+        "about-me-h1"
+        "about-me-h2"
+        "about-me-p";
+        background-color: #EFFEFD;
+    }
+    
+    .about-me-h1{
+        width: 320px;
+        height: 83px;
+        padding: 8%;
+        margin-top: -182px;
+    }
+
+    .span{
+        background-color: #EFFEFD;
+    }
+    
+    .about-me-h2{
+        width: 320px;
+        height: 200px;
+        padding: 12% 15% 2% 15%;
+        margin-top: -125%;
+    }
+    
+    .about-me-p{
+        padding: 0% 10% 5% 10%;
+        margin-top: -157%;
+    }
+
+    .about-me-skills-grid-container{
+        padding: 30px 0px 30px 0px;
+        column-gap: 35px;
+        margin-top: -104%;
+    }
+
+    .about-me-skill{
+        width: 50px;
+        height: 50px;
     }
 }

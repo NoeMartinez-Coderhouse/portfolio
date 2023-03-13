@@ -1,0 +1,38 @@
+/* 
+************************
+* MEGA QUERIES: TABLET *
+************************
+*/
+@media  (max-width: 768px) {
+    .header-grid-logo{
+        font-size: 30px;
+        width: 120px;
+    }
+
+    .home-col-1 img{
+        width: 300px;
+        height: 580px;
+    }
+
+    .home-col-2{
+        width: 300px;
+        height: 580px;
+    }
+
+    .about-me-grid-container{
+        grid-template-columns: 235px 380px;
+        grid-template-rows: 300px 300px;
+    }
+    
+    .about-me-h1{
+        padding: 121% 20% 30% 20%;
+    }
+    
+    .about-me-h2{
+        padding: 45% 15% 2% 15%;
+    }
+    
+    .about-me-p{
+        padding: 0% 10% 5% 10%;
+    }
+}

@@ -1,0 +1,29 @@
+.home-container-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #D5F2EE;
+}
+
+.home-col-1 img{
+    width: 490px;
+    height: 880px;
+}
+
+.home-col-2{
+    width: 490px;
+    height: 880px;
+    background-color: rgba(20, 109, 135, 0.19);
+    text-align: center;
+    align-items: center;
+}
+
+.home-col-2 h1{
+    margin-top: 70%;
+    color: #3CACAE;
+}
+
+.home-col-2 p{
+    color: #3CACAE;
+}

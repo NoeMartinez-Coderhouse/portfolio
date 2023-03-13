@@ -1,0 +1,64 @@
+.about-me-grid-container{
+    display: grid;
+    grid-template-columns: 335px 580px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas:
+    "about-me-h1 about-me-h2"
+    "span about-me-p";
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: #D5F2EE;
+}
+
+span{
+    grid-area: span;
+    background-color: #D5F2EE;
+}
+
+.about-me-h1{
+    grid-area: about-me-h1;
+    background-color: #198597;
+    font-weight: 200;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 55% 31% 78% 31%;
+}
+
+.about-me-h2{
+    grid-area: about-me-h2;
+    background-color: #EFFEFD;
+    font-weight: 300;
+    color: #3CACAE;
+    padding: 45% 15% 2% 15%;
+}
+
+.about-me-p{
+    grid-area: about-me-p;
+    background-color: #EFFEFD;
+    font-weight: 100;
+    color: #3CACAE;
+    padding: 0% 10% 5% 10%;
+}
+
+.about-me-skills-grid-container{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #EFFEFD;
+    padding: 40px 0px 40px 0px;
+    width: 100%;
+}
+
+.about-me-skill{
+    width: 103px;
+    height: 108px;
+}
+
+.about-me-skill-text{
+    font-weight: 500;
+    color: #3CACAE;
+}

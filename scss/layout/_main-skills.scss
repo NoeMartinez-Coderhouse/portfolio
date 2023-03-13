@@ -1,0 +1,146 @@
+.skills-grid-container{
+    display: grid;
+    grid-template-columns: 300px 300px 400px;
+    grid-template-rows: repeat(8, 70px);
+    grid-template-areas:
+    "skill-java skill-git skills-h2"
+    "skill-go skill-github skills-h2"
+    "skill-rest skill-html skills-h2"
+    "skill-spring skill-css skills-h2"
+    "skill-junit skill-node skills-span"
+    "skill-sql skill-javascript skills-span"
+    "skill-maven skill-react skills-span"
+    "skill-scrum skill-jira skills-span";
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #D5F2EE;
+    padding: 20px;
+    
+    img{
+        width: 54px;
+        height: 39px;
+    }
+
+    h2{
+        font-weight: 200;
+        font-size: 48px;
+    }
+}
+
+.skill-java{
+    grid-area: skill-java;
+}
+
+.skill-go{
+    grid-area: skill-go;
+}
+
+.skill-rest{
+    grid-area: skill-rest;
+    
+}
+
+.skill-spring{
+    grid-area: skill-spring;
+}
+
+.skill-junit{
+    grid-area: skill-junit;
+}
+
+.skill-sql{
+    grid-area: skill-sql;
+}
+
+.skill-maven{
+    grid-area: skill-maven;
+}
+
+.skill-scrum{
+    grid-area: skill-scrum;
+}
+
+.skill-git{
+    grid-area: skill-git;
+}
+
+.skill-github{
+    grid-area: skill-github;
+}
+
+.skill-html{
+    grid-area: skill-html;
+}
+
+.skill-css{
+    grid-area: skill-css;
+}
+
+.skill-node{
+    grid-area: skill-node;
+}
+
+.skill-javascript{
+    grid-area: skill-javascript;
+}
+
+.skill-react{
+    grid-area: skill-react;
+}
+
+.skill-jira{
+    grid-area: skill-jira;
+}
+
+.skill-java,
+.skill-go,
+.skill-rest,
+.skill-spring,
+.skill-junit,
+.skill-sql,
+.skill-maven,
+.skill-scrum,
+.skill-git,
+.skill-github,
+.skill-html,
+.skill-css,
+.skill-node,
+.skill-javascript,
+.skill-react,
+.skill-jira{
+    background-color: rgba(20, 109, 135, 0.19);
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 54px 150px;
+    padding: 15.5px 48px;
+
+    img{
+        padding-right: 15px;
+    }
+
+    p{
+        font-weight: 400;
+        color: #3CACAE;
+    }
+}
+
+.skills-h2{
+    grid-area: skills-h2;
+    background-color: rgba(248, 165, 119, 0.77);
+    color: #FFFFFF;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    padding: 112px 80px;
+}
+
+.skills-span{
+    grid-area: skills-span;
+    background-color: #D5F2EE;
+}

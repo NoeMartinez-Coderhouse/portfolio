@@ -4,15 +4,15 @@
     grid-template-rows: 400px 400px;
     grid-template-areas:
     "about-me-h1 about-me-h2"
-    "span about-me-p";
+    "about-me-span about-me-p";
     width: 100%;
     justify-content: center;
     align-content: center;
     background-color: #D5F2EE;
 }
 
-span{
-    grid-area: span;
+.about-me-span{
+    grid-area: about-me-span;
     background-color: #D5F2EE;
 }
 
@@ -20,9 +20,10 @@ span{
     grid-area: about-me-h1;
     background-color: #198597;
     font-weight: 200;
+    font-size: 48px;
     color: #FFFFFF;
     text-align: center;
-    padding: 55% 31% 78% 31%;
+    padding: 45% 31% 78% 31%;
 }
 
 .about-me-h2{

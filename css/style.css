@@ -1,335 +1,245 @@
-/* 
-*******************
-* GUÍA DE FUENTES *
-*******************
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Slab', serif; 
-font-family: 'Roboto Serif', serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*******************
-* GUÍA DE COLORES *
-*******************
-background-color: rgba(20, 109, 135, 0.19);
+body {
+  font-family: 'Roboto', sans-serif; }
 
-* Fondo del sitio
-background-color: #D5F2EE;
+.header-grid-container {
+  background-color: #D5F2EE;
+  display: grid;
+  width: 100%;
+  height: 95px;
+  grid-template-columns: 20% repeat(4, 15%);
+  justify-content: start;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px; }
 
-* Color de fuente
-color: #3CACAE;
-color: #FFFFFF; --blanco
-*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.header-grid-logo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 40px;
+  color: #3CACAE;
+  text-decoration: none;
+  border: 3px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3CACAE;
+  width: 160px;
+  text-align: center; }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
+.header-grid-navbar {
+  font-weight: 100;
+  color: #3CACAE;
+  text-decoration: none; }
 
-.header-grid-container{
-    background-color: #D5F2EE;
-    display: grid;
-    width: 100%;
-    height: 95px;
-    grid-template-columns: 20% repeat(4, 15%);
-    justify-content: start;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    gap: 20px;
-}
+.footer-grid-container {
+  background-color: #D5F2EE;
+  display: grid;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: 20% 60% repeat(4, 5%);
+  justify-content: start;
+  justify-items: start;
+  align-content: center;
+  align-items: center; }
 
-.header-grid-logo{
-    font-family: 'Roboto Slab', serif;
-    font-size: 40px;
-    color: #3CACAE;
-    text-decoration: none;
-    border: 3px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #3CACAE;
-    width: 160px;
-    text-align: center;
-}
+.footer-grid-logo {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  color: #3CACAE;
+  text-decoration: none;
+  border: 3px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #3CACAE;
+  width: 100px;
+  text-align: center;
+  margin-left: 20px; }
 
-.header-grid-navbar{
-    font-weight: 100;
-    color: #3CACAE;
-    text-decoration: none;
-}
+.footer-grid-p-slogan {
+  font-family: 'Roboto Serif', serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #3CACAE; }
 
-.home-container-flex{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    background-color: #D5F2EE;
-}
+.footer-grid-img-link img {
+  width: 30px;
+  height: 30px; }
 
-.div{
-    width: 390px;
-    height: 680px;
-}
+.footer-grid-copyright {
+  display: grid;
+  color: #3CACAE;
+  background-color: #D5F2EE;
+  width: 100%;
+  height: 50px;
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center; }
 
-.home-col-1 img{
-    width: 490px;
-    height: 880px;
-}
+.footer-grid-copyright-logo {
+  width: 12px;
+  height: 12px; }
 
-.home-col-2{
-    width: 490px;
-    height: 880px;
-    background-color: rgba(20, 109, 135, 0.19);
-    text-align: center;
-    align-items: center;
-}
+.home-container-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #D5F2EE; }
 
-.home-col-2 h1{
-    margin-top: 70%;
-    color: #3CACAE;
-}
+.home-col-1 img {
+  width: 490px;
+  height: 880px; }
 
-.home-col-2 p{
-    color: #3CACAE;
-}
+.home-col-2 {
+  width: 490px;
+  height: 880px;
+  background-color: rgba(20, 109, 135, 0.19);
+  text-align: center;
+  align-items: center; }
 
-.footer-grid-container{
-    background-color: #D5F2EE;
-    display: grid;
-    width: 100%;
-    height: 50px;
-    grid-template-columns: 20% 60% repeat(4, 5%);
-    justify-content: start;
-    justify-items: start;
-    align-content:  center;
-    align-items: center;
-}
+.home-col-2 h1 {
+  margin-top: 70%;
+  color: #3CACAE; }
 
-.footer-grid-logo{
-    font-family: 'Roboto Slab', serif;
-    font-size: 20px;
-    color: #3CACAE;
-    text-decoration: none;
-    border: 3px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #3CACAE;
-    width: 100px;
-    text-align: center;
-    margin-left: 20px;
-}
+.home-col-2 p {
+  color: #3CACAE; }
 
-.footer-grid-p-slogan{
-    font-family: 'Roboto Serif', serif;
-    font-size: 18px;
-    font-style: italic;
-    color: #3CACAE;
-}
+.about-me-grid-container {
+  display: grid;
+  grid-template-columns: 335px 580px;
+  grid-template-rows: 400px 400px;
+  grid-template-areas: "about-me-h1 about-me-h2" "span about-me-p";
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
 
-.footer-grid-img-link img{
-    width: 30px;
-    height: 30px;
-}
+span {
+  grid-area: span;
+  background-color: #D5F2EE; }
 
-.footer-grid-copyright{
-    display: grid;
-    color: #3CACAE;
-    background-color: #D5F2EE;
-    width: 100%;
-    height: 50px;
-    grid-template-columns: 100%;
-    justify-content: center;
-    justify-items: center;
-    align-content:  center;
-    align-items: center;
-}
+.about-me-h1 {
+  grid-area: about-me-h1;
+  background-color: #198597;
+  font-weight: 200;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 55% 31% 78% 31%; }
 
-.footer-grid-copyright-logo{
-    width: 12px;
-    height: 12px;
-}
+.about-me-h2 {
+  grid-area: about-me-h2;
+  background-color: #EFFEFD;
+  font-weight: 300;
+  color: #3CACAE;
+  padding: 45% 15% 2% 15%; }
 
-.about-me-grid-container{
-    display: grid;
-    grid-template-columns: 335px 580px;
-    grid-template-rows: 400px 400px;
-    grid-template-areas:
-    "about-me-h1 about-me-h2"
-    "span about-me-p";
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-    background-color: #D5F2EE;
-}
+.about-me-p {
+  grid-area: about-me-p;
+  background-color: #EFFEFD;
+  font-weight: 100;
+  color: #3CACAE;
+  padding: 0% 10% 5% 10%; }
 
-span{
-    grid-area: span;
-    background-color: #D5F2EE;
-}
+.about-me-skills-grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: #EFFEFD;
+  padding: 40px 0px 40px 0px;
+  width: 100%; }
 
-.about-me-h1{
-    grid-area: about-me-h1;
-    background-color: #198597;
-    font-weight: 200;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 55% 31% 78% 31%;
-}
+.about-me-skill {
+  width: 103px;
+  height: 108px; }
 
-.about-me-h2{
-    grid-area: about-me-h2;
-    background-color: #EFFEFD;
-    font-weight: 300;
-    color: #3CACAE;
-    padding: 45% 15% 2% 15%;
-}
-
-.about-me-p{
-    grid-area: about-me-p;
-    background-color: #EFFEFD;
-    font-weight: 100;
-    color: #3CACAE;
-    padding: 0% 10% 5% 10%;
-}
-
-.about-me-skills-grid-container{
-    display: grid;
-    grid-template-columns: 20% 20% 20%;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
-    background-color: #EFFEFD;
-    padding: 40px 0px 40px 0px;
-    width: 100%;
-}
-
-.about-me-skill{
-    width: 103px;
-    height: 108px;
-}
-
-.about-me-skill-text{
-    font-weight: 500;
-    color: #3CACAE;
-}
+.about-me-skill-text {
+  font-weight: 500;
+  color: #3CACAE; }
 
 /* 
 ************************
 * MEGA QUERIES: TABLET *
 ************************
 */
-@media  (max-width: 768px) {
-    .header-grid-logo{
-        font-size: 30px;
-        width: 120px;
-    }
-
-    .home-col-1 img{
-        width: 300px;
-        height: 580px;
-    }
-
-    .home-col-2{
-        width: 300px;
-        height: 580px;
-    }
-
-    .about-me-grid-container{
-        grid-template-columns: 235px 380px;
-        grid-template-rows: 300px 300px;
-    }
-    
-    .about-me-h1{
-        padding: 121% 20% 30% 20%;
-    }
-    
-    .about-me-h2{
-        padding: 45% 15% 2% 15%;
-    }
-    
-    .about-me-p{
-        padding: 0% 10% 5% 10%;
-    }
-}
+@media (max-width: 768px) {
+  .header-grid-logo {
+    font-size: 30px;
+    width: 120px; }
+  .home-col-1 img {
+    width: 300px;
+    height: 580px; }
+  .home-col-2 {
+    width: 300px;
+    height: 580px; }
+  .about-me-grid-container {
+    grid-template-columns: 235px 380px;
+    grid-template-rows: 300px 300px; }
+  .about-me-h1 {
+    padding: 121% 20% 30% 20%; }
+  .about-me-h2 {
+    padding: 45% 15% 2% 15%; }
+  .about-me-p {
+    padding: 0% 10% 5% 10%; } }
 
 /* 
 ************************
 * MEGA QUERIES: MOBILE *
 ************************
 */
-@media  (max-width: 320px) {
-    .header-grid-container{
-        height: 300px;
-        grid-template-columns: 100%;
-    }
-
-    .home-col-1 img{
-        width: 280px;
-        height: 480px;
-    }
-
-    .home-col-2{
-        width: 280px;
-        height: 480px;
-    }
-
-    .footer-grid-container{
-        grid-template-columns: 100%;
-        grid-template-columns: auto;
-        height: 300px;
-        gap: 15px;
-        justify-content: center;
-        justify-items: center;
-        align-content:  center;
-        align-items: center;
-    }
-
-    .about-me-grid-container{
-        grid-template-columns: 100%;
-        /* grid-template-rows: 100%; */
-        width: 100%;
-        height: 1000px;
-        grid-template-areas:
-        "about-me-h1"
-        "about-me-h2"
-        "about-me-p";
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h1{
-        width: 320px;
-        height: 83px;
-        padding: 8%;
-        margin-top: -182px;
-    }
-
-    .span{
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h2{
-        width: 320px;
-        height: 200px;
-        padding: 12% 15% 2% 15%;
-        margin-top: -125%;
-    }
-    
-    .about-me-p{
-        padding: 0% 10% 5% 10%;
-        margin-top: -157%;
-    }
-
-    .about-me-skills-grid-container{
-        padding: 30px 0px 30px 0px;
-        column-gap: 35px;
-        margin-top: -104%;
-    }
-
-    .about-me-skill{
-        width: 50px;
-        height: 50px;
-    }
-}
+@media (max-width: 320px) {
+  .header-grid-container {
+    height: 300px;
+    grid-template-columns: 100%; }
+  .home-col-1 img {
+    width: 280px;
+    height: 480px; }
+  .home-col-2 {
+    width: 280px;
+    height: 480px; }
+  .footer-grid-container {
+    grid-template-columns: 100%;
+    grid-template-columns: auto;
+    height: 300px;
+    gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center; }
+  .about-me-grid-container {
+    grid-template-columns: 100%;
+    /* grid-template-rows: 100%; */
+    width: 100%;
+    height: 1000px;
+    grid-template-areas: "about-me-h1" "about-me-h2" "about-me-p";
+    background-color: #EFFEFD; }
+  .about-me-h1 {
+    width: 320px;
+    height: 83px;
+    padding: 8%;
+    margin-top: -182px; }
+  .span {
+    background-color: #EFFEFD; }
+  .about-me-h2 {
+    width: 320px;
+    height: 200px;
+    padding: 12% 15% 2% 15%;
+    margin-top: -125%; }
+  .about-me-p {
+    padding: 0% 10% 5% 10%;
+    margin-top: -157%; }
+  .about-me-skills-grid-container {
+    padding: 30px 0px 30px 0px;
+    column-gap: 35px;
+    margin-top: -104%; }
+  .about-me-skill {
+    width: 50px;
+    height: 50px; } }

@@ -306,6 +306,117 @@ body {
   grid-area: skills-span;
   background-color: #D5F2EE; }
 
+.edu-grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "edu-h2 edu-fs-grid-container" "edu-h2 edu-u-grid-container" "edu-span edu-b-grid-container";
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: #D5F2EE;
+  padding: 2% 10%; }
+  .edu-grid-container h3 {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
+
+.edu-h2 {
+  grid-area: edu-h2;
+  background-color: #FFF9BE;
+  color: #72CFD0;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 48px;
+  padding: 79.7% 18.2%; }
+
+.edu-span {
+  grid-area: edu-span;
+  background-color: #D5F2EE; }
+
+.edu-fs-grid-container {
+  grid-area: edu-fs-grid-container;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  grid-template-areas: "fs-year fs-h3" "fs-year fs-p";
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center; }
+
+.fs-year {
+  grid-area: fs-year;
+  padding: 104% 116% 63% 115%;
+  color: #EFE79F;
+  background-color: #EFFEFD; }
+
+.fs-h3 {
+  grid-area: fs-h3;
+  padding: 10.9% 27.8%; }
+
+.fs-p {
+  grid-area: fs-p;
+  padding: 10% 31.5%;
+  color: #3CACAE;
+  background-color: #EFFEFD; }
+
+.edu-u-grid-container {
+  grid-area: edu-u-grid-container;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  grid-template-areas: "u-year u-h3" "u-year u-description";
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center; }
+
+.u-year {
+  grid-area: u-year;
+  padding: 87% 115.5%;
+  color: #EFE79F;
+  background-color: #EFFEFD; }
+
+.u-h3 {
+  grid-area: u-h3;
+  padding: 12.5% 25.7%; }
+
+.u-description {
+  grid-area: u-description;
+  padding: 12.2% 23%;
+  color: #3CACAE;
+  background-color: #EFFEFD; }
+
+.edu-b-grid-container {
+  grid-area: edu-b-grid-container;
+  display: grid;
+  grid-template-columns: 20% 50%;
+  grid-template-areas: "b-year b-h3" "b-year b-description";
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center; }
+
+.b-year {
+  grid-area: b-year;
+  padding: 89.4% 115%;
+  color: #EFE79F;
+  background-color: #EFFEFD; }
+
+.b-h3 {
+  grid-area: b-h3;
+  padding: 10.5% 25%; }
+
+.b-description {
+  grid-area: b-description;
+  padding: 10% 27.2%;
+  color: #3CACAE;
+  background-color: #EFFEFD; }
+
 /* 
 ************************
 * MEGA QUERIES: TABLET *

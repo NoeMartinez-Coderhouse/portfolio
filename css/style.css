@@ -540,6 +540,157 @@ nav label {
   color: #3CACAE;
   background-color: #EFFEFD; }
 
+.exp-grid-container {
+  display: grid;
+  grid-template-columns: 45% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "exp-grid-detail-container exp-grid-h1-container" "exp-grid-detail-container exp-span";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
+  .exp-grid-container h2, .exp-grid-container h3, .exp-grid-container h5, .exp-grid-container p {
+    color: #3CACAE; }
+  .exp-grid-container h2 {
+    font-weight: 200; }
+  .exp-grid-container ul {
+    color: #3CACAE; }
+
+.exp-grid-detail-container {
+  grid-area: exp-grid-detail-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "exp-company-h2" "exp-acc" "exp-grid-is-h4-container" "exp-acc-is-h5" "exp-acc-is-period" "exp-acc-is-desc" "exp-acc-is-analista-h5" "exp-acc-is-analista-period" "exp-acc-is-analista-desc" "exp-grid-st-h4-container" "exp-acc-st-h5" "exp-acc-st-period" "exp-acc-st-desc" "exp-meli" "exp-grid-mp-r-h4-container" "exp-meli-mp-r-h5" "exp-meli-mp-r-period" "exp-meli-mp-r-desc" "exp-grid-wc-h4-container" "exp-meli-wc-h5" "exp-meli-wc-period" "exp-meli-wc-desc";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #EFFEFD;
+  padding: 20% 10%; }
+  .exp-grid-detail-container p {
+    font-size: 12px;
+    padding: 2% 7%; }
+  .exp-grid-detail-container h5 {
+    padding: 3% 7%; }
+  .exp-grid-detail-container ul {
+    padding: 4%; }
+
+.exp-grid-h1-container {
+  grid-area: exp-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "exp-h1";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: #198597; }
+
+.exp-h1 {
+  grid-area: exp-h1;
+  color: #FFFFFF;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 48px; }
+
+.exp-span {
+  grid-area: exp-span;
+  background-color: #D5F2EE; }
+
+.exp-company-h2 {
+  grid-area: exp-company-h2;
+  padding-bottom: 10%; }
+
+.exp-acc {
+  grid-area: exp-acc; }
+
+.exp-grid-is-h4-container {
+  grid-area: exp-grid-is-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%; }
+
+.exp-acc-is-h5 {
+  grid-area: exp-acc-is-h5; }
+
+.exp-acc-is-period {
+  grid-area: exp-acc-is-period; }
+
+.exp-acc-is-desc {
+  grid-area: exp-acc-is-desc; }
+
+.exp-acc-is-analista-h5 {
+  grid-area: exp-acc-is-analista-h5; }
+
+.exp-acc-is-analista-period {
+  grid-area: exp-acc-is-analista-period; }
+
+.exp-acc-is-analista-desc {
+  grid-area: exp-acc-is-analista-desc; }
+
+.exp-grid-st-h4-container {
+  grid-area: exp-grid-st-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%;
+  margin-top: 5%; }
+
+.exp-acc-st-h5 {
+  grid-area: exp-acc-st-h5; }
+
+.exp-acc-st-period {
+  grid-area: exp-acc-st-period; }
+
+.exp-acc-st-desc {
+  grid-area: exp-acc-st-desc; }
+
+.exp-meli {
+  grid-area: exp-meli; }
+
+.exp-grid-mp-r-h4-container {
+  grid-area: exp-grid-mp-r-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%; }
+
+.exp-meli-mp-r-h5 {
+  grid-area: exp-meli-mp-r-h5; }
+
+.exp-meli-mp-r-period {
+  grid-area: exp-meli-mp-r-period; }
+
+.exp-meli-mp-r-desc {
+  grid-area: exp-meli-mp-r-desc; }
+
+.exp-grid-wc-h4-container {
+  grid-area: exp-grid-wc-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%;
+  margin-top: 5%; }
+
+.exp-meli-wc-h5 {
+  grid-area: exp-meli-wc-h5; }
+
+.exp-meli-wc-period {
+  grid-area: exp-meli-wc-period; }
+
+.exp-meli-wc-desc {
+  grid-area: exp-meli-wc-desc; }
+
 /* 
 *************************
 *  MEGA QUERIES: 1431px *
@@ -691,6 +842,13 @@ nav label {
   .skill-jira p {
     padding-left: 35%; }
   .skills-h1 {
+    font-size: 42px; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-h1 {
     font-size: 42px; } }
 
 /* 
@@ -781,6 +939,13 @@ nav label {
   .about-me-skill-text-responsive,
   .about-me-skill-text-security {
     font-size: 13px; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-h1 {
+    font-size: 36px; }
   /*
     ************
     *  FOOTER  *
@@ -895,7 +1060,14 @@ nav label {
     *****************
     */
   .skills-grid-details-container {
-    padding: 8% 4%; } }
+    padding: 8% 4%; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-h1 {
+    font-size: 30px; } }
 
 /* 
 ************************
@@ -1161,6 +1333,24 @@ nav label {
     .skill-jira p {
       padding-left: 10%;
       font-size: 20px; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "exp-grid-h1-container" "exp-grid-detail-container"; }
+    .exp-grid-container h5, .exp-grid-container p {
+      font-size: 18px; }
+    .exp-grid-container p {
+      font-size: 16px; }
+  .exp-h1 {
+    font-size: 48px;
+    width: 100%;
+    height: 100%;
+    padding: 4%; }
   /*
     ************
     *  FOOTER  *

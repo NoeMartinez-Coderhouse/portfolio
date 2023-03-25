@@ -1,14 +1,15 @@
 .header-grid-container{
     background-color: #D5F2EE;
-    display: grid;
     width: 100%;
-    height: 95px;
-    grid-template-columns: 20% repeat(4, 15%);
-    justify-content: start;
-    justify-items: center;
-    align-content: center;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #D5F2EE;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
 }
 
 .header-grid-logo{
@@ -21,11 +22,30 @@
     border-width: 3px;
     border-color: #3CACAE;
     width: 160px;
+    height: 100%;
     text-align: center;
+    margin: 2% 3%;
+}
+
+.menu{
+    width: 76%;
+    height: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15%;
 }
 
 .header-grid-navbar{
     font-weight: 100;
     color: #3CACAE;
     text-decoration: none;
+    font-size: 24px;
+}
+
+nav #toggle,
+nav label{
+    display: none;
 }

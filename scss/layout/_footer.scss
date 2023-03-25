@@ -2,15 +2,25 @@
     background-color: #D5F2EE;
     display: grid;
     width: 100%;
-    height: 50px;
-    grid-template-columns: 20% 60% repeat(4, 5%);
+    height: 100%;
+    grid-template-columns: 30% 50% repeat(4, 5%);
+    grid-template-rows: 40px 54.17px;
+    grid-template-areas: 
+    "footer-grid-logo footer-span footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb"
+    "footer-grid-p-slogan footer-span footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb";
     justify-content: start;
     justify-items: start;
     align-content:  center;
     align-items: center;
+    padding: 2% 2%;
+}
+
+.footer-span{
+    grid-area: footer-span;
 }
 
 .footer-grid-logo{
+    grid-area: footer-grid-logo;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     color: #3CACAE;
@@ -23,23 +33,55 @@
     text-align: center;
     margin-left: 20px;
 }
+.footer-grid-logo:hover{
+    font-size: 30px;
+}
 
 .footer-grid-p-slogan{
+    grid-area: footer-grid-p-slogan;
     font-family: 'Roboto Serif', serif;
     font-size: 18px;
     font-style: italic;
     color: #3CACAE;
+    padding: 8% 0% 0% 8%;
 }
 
-.footer-grid-img-link img{
+.footer-grid-img-github img,
+.footer-grid-img-li img,
+.footer-grid-img-insta img,
+.footer-grid-img-fb img{
     width: 30px;
     height: 30px;
 }
 
+.footer-grid-img-github{
+    grid-area: footer-grid-img-github;
+}
+
+.footer-grid-img-li{
+    grid-area: footer-grid-img-li;
+}
+
+.footer-grid-img-insta{
+    grid-area: footer-grid-img-insta;
+}
+
+.footer-grid-img-fb{
+    grid-area: footer-grid-img-fb;
+}
+
+.footer-grid-img-github:hover,
+.footer-grid-img-li:hover,
+.footer-grid-img-insta:hover,
+.footer-grid-img-fb:hover{
+    width: 60px;
+    height: 60px;
+}
+
 .footer-grid-copyright{
     display: grid;
-    color: #3CACAE;
-    background-color: #D5F2EE;
+    color: #D5F2EE;
+    background-color: #3CACAE;
     width: 100%;
     height: 50px;
     grid-template-columns: 100%;
@@ -51,5 +93,6 @@
 
 .footer-grid-copyright-logo{
     width: 12px;
-    height: 12px;
+    height: 16px;
+    padding-top: 5px;
 }

@@ -1,0 +1,92 @@
+/* 
+************************
+* MEGA QUERIES: 631px  *
+************************
+*/
+@media  (max-width: 631px) {
+    /*
+    ************
+    *  HEADER  *
+    ************
+    */
+    nav{
+        grid-template-columns: 100%;
+    }
+
+    nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav label{
+        display: inline-flex;
+        cursor: pointer;
+        padding: 2% 3%;
+    }
+
+    nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+
+    .header-menu-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu ul li{
+        padding: 1%;
+    }
+
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-1{
+        width: 90%;
+        height: 90%;
+    }
+
+    .home-col-2{
+        width: 90%;
+        height: 90%;
+        background-color: #D5F2EE;
+        padding: 5%;
+    }
+
+    .home-col-2 h1{
+        font-size: 45px;
+    }
+
+    .home-col-2 p{
+        font-size: 25px;
+    }
+    
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-container{
+        grid-template-columns: 25% 35% repeat(4, 10%);
+        grid-template-areas: 
+        "footer-grid-logo footer-span footer-span footer-span footer-span footer-span"
+        "footer-grid-p-slogan footer-grid-p-slogan footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb";
+    }
+
+    .footer-grid-logo{
+        margin-left: 0%;
+        margin: 10%;
+    }
+
+    .footer-grid-p-slogan{
+        font-size: 18px;
+        padding: 0%;
+    }
+}

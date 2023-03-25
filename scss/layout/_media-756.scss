@@ -1,17 +1,20 @@
 /* 
 ************************
-* MEGA QUERIES: TABLET *
+* MEGA QUERIES: 756px  *
 ************************
 */
-@media  (max-width: 768px) {
+@media  (max-width: 756px) {
     /*
     ************
     *  HEADER  *
     ************
     */
-    .header-grid-logo{
-        font-size: 30px;
-        width: 120px;
+    .menu {
+        width: 75%;
+    }
+
+    nav ul{
+        gap: 10%;
     }
 
     /* 
@@ -20,11 +23,11 @@
     ***************
     */
     .home-col-2 h1{
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .home-col-2 p{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     /* 
@@ -47,5 +50,14 @@
     
     .about-me-p{
         padding: 0% 10% 5% 10%;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-p-slogan{
+        font-size: 12px;
     }
 }

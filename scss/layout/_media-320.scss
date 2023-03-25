@@ -4,32 +4,29 @@
 ************************
 */
 @media  (max-width: 320px) {
-    .header-grid-container{
+    /*
+    ************
+    *  HEADER  *
+    ************
+    */
+    /*.header-grid-container{
         height: 300px;
         grid-template-columns: 100%;
+    }*/
+
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1 {
+        font-size: 35px;
     }
 
-    .home-col-1 img{
-        width: 280px;
-        height: 480px;
+    .home-col-2 p {
+        font-size: 21px;
     }
-
-    .home-col-2{
-        width: 280px;
-        height: 480px;
-    }
-
-    .footer-grid-container{
-        grid-template-columns: 100%;
-        grid-template-columns: auto;
-        height: 300px;
-        gap: 15px;
-        justify-content: center;
-        justify-items: center;
-        align-content:  center;
-        align-items: center;
-    }
-
+/*
     .about-me-grid-container{
         grid-template-columns: 100%;
         width: 100%;
@@ -74,5 +71,14 @@
     .about-me-skill{
         width: 50px;
         height: 50px;
+    }*/
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-p-slogan{
+        font-size: 15px;
     }
 }

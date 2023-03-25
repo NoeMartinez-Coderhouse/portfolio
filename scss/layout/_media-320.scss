@@ -4,75 +4,136 @@
 ************************
 */
 @media  (max-width: 320px) {
-    .header-grid-container{
-        height: 300px;
-        grid-template-columns: 100%;
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1 {
+        font-size: 35px;
     }
 
-    .home-col-1 img{
-        width: 280px;
-        height: 480px;
+    .home-col-2 p {
+        font-size: 21px;
     }
 
-    .home-col-2{
-        width: 280px;
-        height: 480px;
+    /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+    .about-me-col-3{
+        padding: 25% 5%;
     }
 
-    .footer-grid-container{
-        grid-template-columns: 100%;
-        grid-template-columns: auto;
-        height: 300px;
-        gap: 15px;
-        justify-content: center;
-        justify-items: center;
-        align-content:  center;
-        align-items: center;
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skill-java,
+    .skill-go,
+    .skill-rest,
+    .skill-spring,
+    .skill-junit,
+    .skill-sql,
+    .skill-maven,
+    .skill-scrum,
+    .skill-git,
+    .skill-github,
+    .skill-html,
+    .skill-css,
+    .skill-node,
+    .skill-javascript,
+    .skill-react,
+    .skill-jira{
+        grid-template-columns: 20% 40%;
+        grid-template-areas: 
+        "img-java img-git"
+        "img-go img-github"
+        "img-rest img-html"
+        "img-spring img-css"
+        "img-junit img-node"
+        "img-sql img-javascript"
+        "img-maven img-react"
+        "img-scrum img-jira";
+        gap: 5%;
+
+        p{
+            display: none;
+        }
     }
 
-    .about-me-grid-container{
-        grid-template-columns: 100%;
-        width: 100%;
-        height: 1000px;
-        grid-template-areas:
-        "about-me-h1"
-        "about-me-h2"
-        "about-me-p";
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h1{
-        width: 320px;
-        height: 83px;
-        padding: 3%;
-        margin-top: -200px;
+    .img-java{
+        grid-area: img-java;
     }
 
-    .span{
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h2{
-        width: 320px;
-        height: 200px;
-        padding: 12% 15% 2% 15%;
-        margin-top: -125%;
-    }
-    
-    .about-me-p{
-        padding: 0% 10% 5% 10%;
-        margin-top: -157%;
+    .img-go{
+        grid-area: img-go;
     }
 
-    .about-me-skills-grid-container{
-        grid-template-columns: 30% 30% 30%;
-        padding: 20px 0px 20px 0px;
-        column-gap: 10px;
-        margin-top: -97%;
+    .img-rest{
+        grid-area: img-rest;
     }
 
-    .about-me-skill{
-        width: 50px;
-        height: 50px;
+    .img-spring{
+        grid-area: img-spring;
+    }
+
+    .img-junit{
+        grid-area: img-junit;
+    }
+
+    .img-sql{
+        grid-area: img-sql;
+    }
+
+    .img-maven{
+        grid-area: img-maven;
+    }
+
+    .img-scrum{
+        grid-area: img-scrum;
+    }
+
+    .img-git{
+        grid-area: img-git;
+    }
+
+    .img-github{
+        grid-area: img-github;
+    }
+
+    .img-html{
+        grid-area: img-html;
+    }
+
+    .img-css{
+        grid-area: img-css;
+    }
+
+    .img-node{
+        grid-area: img-node;
+    }
+
+    .img-javascript{
+        grid-area: img-javascript;
+    }
+
+    .img-react{
+        grid-area: img-react;
+    }
+
+    .img-jira{
+        grid-area: img-jira;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-p-slogan{
+        font-size: 15px;
     }
 }

@@ -1,0 +1,77 @@
+/* 
+*************************
+*  MEGA QUERIES: 931px  *
+*************************
+*/
+@media  (max-width: 931px) {
+    /*
+    ************
+    *  HEADER  *
+    ************
+    */
+    .menu {
+        width: 70%;
+    }
+
+    nav ul{
+        gap: 12%;
+    }
+
+    /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+    .about-me-skill-design,
+    .about-me-skill-responsive,
+    .about-me-skill-security{
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-me-skill-text-design,
+    .about-me-skill-text-responsive,
+    .about-me-skill-text-security{
+        font-size: 14px;
+    }
+
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skill-java,
+    .skill-go,
+    .skill-rest,
+    .skill-spring,
+    .skill-junit,
+    .skill-sql,
+    .skill-maven,
+    .skill-scrum,
+    .skill-git,
+    .skill-github,
+    .skill-html,
+    .skill-css,
+    .skill-node,
+    .skill-javascript,
+    .skill-react,
+    .skill-jira{
+        p{
+            padding-left: 40%;
+            font-size: 16px;
+        }
+    }
+
+    .skills-h1{
+        font-size: 38px;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-p-slogan{
+        font-size: 16px;
+    }
+}

@@ -8,15 +8,15 @@ body {
 
 .header-grid-container {
   background-color: #D5F2EE;
-  display: grid;
-  width: 100%;
-  height: 95px;
-  grid-template-columns: 20% repeat(4, 15%);
-  justify-content: start;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  gap: 20px; }
+  width: 100%; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #D5F2EE;
+  justify-content: space-between;
+  align-items: center; }
 
 .header-grid-logo {
   font-family: 'Roboto Slab', serif;
@@ -28,25 +28,48 @@ body {
   border-width: 3px;
   border-color: #3CACAE;
   width: 160px;
-  text-align: center; }
+  height: 100%;
+  text-align: center;
+  margin: 2% 3%; }
+
+.menu {
+  width: 76%;
+  height: 100%; }
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15%; }
 
 .header-grid-navbar {
   font-weight: 100;
   color: #3CACAE;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 24px; }
+
+nav #toggle,
+nav label {
+  display: none; }
 
 .footer-grid-container {
   background-color: #D5F2EE;
   display: grid;
   width: 100%;
-  height: 50px;
-  grid-template-columns: 20% 60% repeat(4, 5%);
+  height: 100%;
+  grid-template-columns: 30% 50% repeat(4, 5%);
+  grid-template-rows: 40px 54.17px;
+  grid-template-areas: "footer-grid-logo footer-span footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb" "footer-grid-p-slogan footer-span footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb";
   justify-content: start;
   justify-items: start;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 2% 2%; }
+
+.footer-span {
+  grid-area: footer-span; }
 
 .footer-grid-logo {
+  grid-area: footer-grid-logo;
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
   color: #3CACAE;
@@ -59,20 +82,47 @@ body {
   text-align: center;
   margin-left: 20px; }
 
+.footer-grid-logo:hover {
+  font-size: 30px; }
+
 .footer-grid-p-slogan {
+  grid-area: footer-grid-p-slogan;
   font-family: 'Roboto Serif', serif;
   font-size: 18px;
   font-style: italic;
-  color: #3CACAE; }
+  color: #3CACAE;
+  padding: 8% 0% 0% 8%; }
 
-.footer-grid-img-link img {
+.footer-grid-img-github img,
+.footer-grid-img-li img,
+.footer-grid-img-insta img,
+.footer-grid-img-fb img {
   width: 30px;
   height: 30px; }
 
+.footer-grid-img-github {
+  grid-area: footer-grid-img-github; }
+
+.footer-grid-img-li {
+  grid-area: footer-grid-img-li; }
+
+.footer-grid-img-insta {
+  grid-area: footer-grid-img-insta; }
+
+.footer-grid-img-fb {
+  grid-area: footer-grid-img-fb; }
+
+.footer-grid-img-github:hover,
+.footer-grid-img-li:hover,
+.footer-grid-img-insta:hover,
+.footer-grid-img-fb:hover {
+  width: 60px;
+  height: 60px; }
+
 .footer-grid-copyright {
   display: grid;
-  color: #3CACAE;
-  background-color: #D5F2EE;
+  color: #D5F2EE;
+  background-color: #3CACAE;
   width: 100%;
   height: 50px;
   grid-template-columns: 100%;
@@ -83,39 +133,51 @@ body {
 
 .footer-grid-copyright-logo {
   width: 12px;
-  height: 12px; }
+  height: 16px;
+  padding-top: 5px; }
 
 .home-container-flex {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  background-color: #D5F2EE; }
+  height: 100%;
+  background-color: #D5F2EE;
+  padding: 2%; }
+
+.home-col-1 {
+  width: 35%; }
 
 .home-col-1 img {
-  width: 490px;
-  height: 880px; }
+  width: 100%;
+  height: 100%; }
 
 .home-col-2 {
-  width: 490px;
-  height: 880px;
+  width: 55%;
+  height: 100%;
   background-color: rgba(20, 109, 135, 0.19);
-  text-align: center;
-  align-items: center; }
+  padding: 15%; }
 
 .home-col-2 h1 {
-  margin-top: 70%;
-  color: #3CACAE; }
+  color: #3CACAE;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 50px; }
 
 .home-col-2 p {
-  color: #3CACAE; }
+  color: #3CACAE;
+  font-size: 27px;
+  font-family: 'Roboto';
+  font-weight: 200;
+  padding-top: 2%; }
 
 .about-me-grid-container {
   display: grid;
-  grid-template-columns: 335px 580px;
-  grid-template-rows: 400px 400px;
-  grid-template-areas: "about-me-h1 about-me-h2" "about-me-span about-me-p";
+  grid-template-columns: 25% 45%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "about-me-grid-h1-container about-me-col-3" "about-me-span about-me-col-3";
   width: 100%;
+  height: 100%;
   justify-content: center;
   align-content: center;
   background-color: #D5F2EE; }
@@ -124,69 +186,139 @@ body {
   grid-area: about-me-span;
   background-color: #D5F2EE; }
 
+.about-me-grid-h1-container {
+  grid-area: about-me-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "about-me-h1";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: #198597; }
+
 .about-me-h1 {
   grid-area: about-me-h1;
   background-color: #198597;
   font-weight: 200;
   font-size: 48px;
   color: #FFFFFF;
-  text-align: center;
-  padding: 45% 31% 78% 31%; }
+  text-align: center; }
 
 .about-me-h2 {
   grid-area: about-me-h2;
   background-color: #EFFEFD;
   font-weight: 300;
   color: #3CACAE;
-  padding: 45% 15% 2% 15%; }
+  padding: 0% 0% 10% 0%; }
 
 .about-me-p {
   grid-area: about-me-p;
   background-color: #EFFEFD;
   font-weight: 100;
   color: #3CACAE;
-  padding: 0% 10% 5% 10%; }
+  padding: 0% 0% 20% 0%; }
 
-.about-me-skills-grid-container {
+.about-me-col-3 {
+  grid-area: about-me-col-3;
   display: grid;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: auto;
+  grid-template-areas: "about-me-h2 about-me-h2 about-me-h2" "about-me-p about-me-p about-me-p" "about-me-skill-design about-me-skill-responsive about-me-skill-security" "about-me-skill-text-design about-me-skill-text-responsive about-me-skill-text-security";
+  width: 100%;
+  height: 100%;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
   background-color: #EFFEFD;
-  padding: 40px 0px 40px 0px;
-  width: 100%; }
+  padding: 15% 7% 15% 7%; }
 
-.about-me-skill {
+.about-me-skill-design {
+  grid-area: about-me-skill-design; }
+
+.about-me-skill-responsive {
+  grid-area: about-me-skill-responsive; }
+
+.about-me-skill-security {
+  grid-area: about-me-skill-security; }
+
+.about-me-skill-text-design {
+  grid-area: about-me-skill-text-design; }
+
+.about-me-skill-text-responsive {
+  grid-area: about-me-skill-text-responsive; }
+
+.about-me-skill-text-security {
+  grid-area: about-me-skill-text-security; }
+
+.about-me-skill-design,
+.about-me-skill-responsive,
+.about-me-skill-security {
   width: 103px;
   height: 108px; }
 
-.about-me-skill-text {
+.about-me-skill-text-design,
+.about-me-skill-text-responsive,
+.about-me-skill-text-security {
   font-weight: 500;
   color: #3CACAE; }
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: 300px 300px 400px;
-  grid-template-rows: repeat(8, 70px);
-  grid-template-areas: "skill-java skill-git skills-h2" "skill-go skill-github skills-h2" "skill-rest skill-html skills-h2" "skill-spring skill-css skills-h2" "skill-junit skill-node skills-span" "skill-sql skill-javascript skills-span" "skill-maven skill-react skills-span" "skill-scrum skill-jira skills-span";
+  grid-template-columns: 45% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "skills-grid-details-container skills-grid-h1-container" "skills-grid-details-container skills-span";
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
+
+.skills-grid-details-container {
+  grid-area: skills-grid-details-container;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "skill-java skill-git" "skill-go skill-github" "skill-rest skill-html" "skill-spring skill-css" "skill-junit skill-node" "skill-sql skill-javascript" "skill-maven skill-react" "skill-scrum skill-jira";
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(20, 109, 135, 0.19);
+  width: 100%;
+  height: 100%;
+  padding: 8%; }
+  .skills-grid-details-container img {
+    width: 54px;
+    height: 100%;
+    padding: 1%; }
+
+.skills-grid-h1-container {
+  grid-area: skills-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "skills-h1";
+  width: 100%;
+  height: 100%;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
-  background-color: #D5F2EE;
-  padding: 20px; }
-  .skills-grid-container img {
-    width: 54px;
-    height: 39px; }
-  .skills-grid-container h2 {
-    font-weight: 200;
-    font-size: 48px; }
+  background-color: rgba(248, 165, 119, 0.77); }
 
-.skill-java {
-  grid-area: skill-java; }
+.skills-h1 {
+  grid-area: skills-h1;
+  color: #FFFFFF;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 48px; }
+
+.skills-span {
+  grid-area: skills-span;
+  background-color: #D5F2EE; }
 
 .skill-go {
   grid-area: skill-go; }
@@ -249,31 +381,15 @@ body {
 .skill-javascript,
 .skill-react,
 .skill-jira {
-  background-color: rgba(20, 109, 135, 0.19);
   display: grid;
   justify-items: start;
   align-items: center;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 54px 150px;
-  padding: 15.5px 48px; }
-  .skill-java img,
-  .skill-go img,
-  .skill-rest img,
-  .skill-spring img,
-  .skill-junit img,
-  .skill-sql img,
-  .skill-maven img,
-  .skill-scrum img,
-  .skill-git img,
-  .skill-github img,
-  .skill-html img,
-  .skill-css img,
-  .skill-node img,
-  .skill-javascript img,
-  .skill-react img,
-  .skill-jira img {
-    padding-right: 15px; }
+  grid-template-columns: 20% 50%;
+  width: 100%;
+  height: 100%;
+  padding: 3%; }
   .skill-java p,
   .skill-go p,
   .skill-rest p,
@@ -291,131 +407,371 @@ body {
   .skill-react p,
   .skill-jira p {
     font-weight: 400;
-    color: #3CACAE; }
-
-.skills-h2 {
-  grid-area: skills-h2;
-  background-color: rgba(248, 165, 119, 0.77);
-  color: #FFFFFF;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  padding: 112px 80px; }
-
-.skills-span {
-  grid-area: skills-span;
-  background-color: #D5F2EE; }
+    color: #3CACAE;
+    padding-left: 15%; }
 
 .edu-grid-container {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "edu-h2 edu-fs-grid-container" "edu-h2 edu-u-grid-container" "edu-span edu-b-grid-container";
+  grid-template-columns: 25% 45%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "edu-grid-h1-container edu-grid-detail-container" "edu-span edu-grid-detail-container";
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
+
+.edu-grid-h1-container {
+  grid-area: edu-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "edu-h1";
+  width: 100%;
+  height: 100%;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
-  background-color: #D5F2EE;
-  padding: 2% 10%; }
-  .edu-grid-container h3 {
-    color: #3CACAE;
-    background-color: #EFFEFD; }
+  background-color: #FFF9BE; }
 
-.edu-h2 {
-  grid-area: edu-h2;
-  background-color: #FFF9BE;
+.edu-h1 {
+  grid-area: edu-h1;
   color: #72CFD0;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
   font-weight: 200;
   font-size: 48px;
-  padding: 79.7% 18.2%; }
+  text-align: center; }
 
 .edu-span {
   grid-area: edu-span;
   background-color: #D5F2EE; }
 
-.edu-fs-grid-container {
-  grid-area: edu-fs-grid-container;
+.edu-grid-detail-container {
+  grid-area: edu-grid-detail-container;
   display: grid;
-  grid-template-columns: 20% 50%;
-  grid-template-areas: "fs-year fs-h3" "fs-year fs-p";
-  width: 100%;
-  justify-content: center;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "fs-year edu-fs-grid-container" "u-year edu-u-grid-container" "b-year edu-b-grid-container";
   justify-items: center;
-  align-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #EFFEFD;
+  padding: 20% 10%; }
+  .edu-grid-detail-container p {
+    color: #EFE79F;
+    background-color: #EFFEFD; }
 
 .fs-year {
   grid-area: fs-year;
-  padding: 104% 116% 63% 115%;
-  color: #EFE79F;
-  background-color: #EFFEFD; }
+  font-size: 25px; }
 
-.fs-h3 {
-  grid-area: fs-h3;
-  padding: 10.9% 27.8%; }
+.edu-fs-grid-container {
+  grid-area: edu-fs-grid-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "fs-h2" "fs-p";
+  width: 100%;
+  align-content: center;
+  align-items: center; }
+  .edu-fs-grid-container h2 {
+    font-size: 20px; }
+  .edu-fs-grid-container h2, .edu-fs-grid-container p, .edu-fs-grid-container ul {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
+  .edu-fs-grid-container ul {
+    font-size: 14px;
+    padding: 0% 0% 10% 0%; }
+
+.fs-h2 {
+  grid-area: fs-h2;
+  padding: 0% 0% 4% 0%; }
 
 .fs-p {
-  grid-area: fs-p;
-  padding: 10% 31.5%;
-  color: #3CACAE;
-  background-color: #EFFEFD; }
+  grid-area: fs-p; }
+
+.u-year {
+  grid-area: u-year;
+  font-size: 25px; }
 
 .edu-u-grid-container {
   grid-area: edu-u-grid-container;
   display: grid;
-  grid-template-columns: 20% 50%;
-  grid-template-areas: "u-year u-h3" "u-year u-description";
+  grid-template-columns: 100%;
+  grid-template-areas: "u-h2" "u-description";
   width: 100%;
-  justify-content: center;
-  justify-items: center;
   align-content: center;
   align-items: center; }
+  .edu-u-grid-container h2 {
+    font-size: 20px; }
+  .edu-u-grid-container h2, .edu-u-grid-container p {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
+  .edu-u-grid-container p {
+    padding: 0% 0% 10% 0%; }
 
-.u-year {
-  grid-area: u-year;
-  padding: 87% 115.5%;
-  color: #EFE79F;
-  background-color: #EFFEFD; }
-
-.u-h3 {
-  grid-area: u-h3;
-  padding: 12.5% 25.7%; }
+.u-h2 {
+  grid-area: u-h2;
+  padding: 0% 0% 4% 0%; }
 
 .u-description {
-  grid-area: u-description;
-  padding: 12.2% 23%;
-  color: #3CACAE;
-  background-color: #EFFEFD; }
+  grid-area: u-description; }
 
 .edu-b-grid-container {
   grid-area: edu-b-grid-container;
   display: grid;
-  grid-template-columns: 20% 50%;
-  grid-template-areas: "b-year b-h3" "b-year b-description";
+  grid-template-columns: 100%;
+  grid-template-areas: "b-h2" "b-description";
   width: 100%;
-  justify-content: center;
-  justify-items: center;
   align-content: center;
   align-items: center; }
+  .edu-b-grid-container h2 {
+    font-size: 20px; }
+  .edu-b-grid-container h2, .edu-b-grid-container p {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
 
 .b-year {
   grid-area: b-year;
-  padding: 89.4% 115%;
-  color: #EFE79F;
-  background-color: #EFFEFD; }
+  font-size: 25px; }
 
-.b-h3 {
-  grid-area: b-h3;
-  padding: 10.5% 25%; }
+.b-h2 {
+  grid-area: b-h2;
+  padding: 0% 0% 4% 0%; }
 
 .b-description {
   grid-area: b-description;
-  padding: 10% 27.2%;
   color: #3CACAE;
   background-color: #EFFEFD; }
+
+.exp-grid-container {
+  display: grid;
+  grid-template-columns: 45% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "exp-grid-detail-container exp-grid-h1-container" "exp-grid-detail-container exp-span";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
+  .exp-grid-container h2, .exp-grid-container h3, .exp-grid-container h5, .exp-grid-container p {
+    color: #3CACAE; }
+  .exp-grid-container h2 {
+    font-weight: 200; }
+  .exp-grid-container ul {
+    color: #3CACAE; }
+
+.exp-grid-detail-container {
+  grid-area: exp-grid-detail-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "exp-company-h2" "exp-acc" "exp-grid-is-h4-container" "exp-acc-is-h5" "exp-acc-is-period" "exp-acc-is-desc" "exp-acc-is-analista-h5" "exp-acc-is-analista-period" "exp-acc-is-analista-desc" "exp-grid-st-h4-container" "exp-acc-st-h5" "exp-acc-st-period" "exp-acc-st-desc" "exp-meli" "exp-grid-mp-r-h4-container" "exp-meli-mp-r-h5" "exp-meli-mp-r-period" "exp-meli-mp-r-desc" "exp-grid-wc-h4-container" "exp-meli-wc-h5" "exp-meli-wc-period" "exp-meli-wc-desc";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #EFFEFD;
+  padding: 20% 10%; }
+  .exp-grid-detail-container p {
+    font-size: 12px;
+    padding: 2% 7%; }
+  .exp-grid-detail-container h5 {
+    padding: 3% 7%; }
+  .exp-grid-detail-container ul {
+    padding: 4%; }
+
+.exp-grid-h1-container {
+  grid-area: exp-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "exp-h1";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: #198597; }
+
+.exp-h1 {
+  grid-area: exp-h1;
+  color: #FFFFFF;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 48px; }
+
+.exp-span {
+  grid-area: exp-span;
+  background-color: #D5F2EE; }
+
+.exp-company-h2 {
+  grid-area: exp-company-h2;
+  padding-bottom: 10%; }
+
+.exp-acc {
+  grid-area: exp-acc; }
+
+.exp-grid-is-h4-container {
+  grid-area: exp-grid-is-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%; }
+
+.exp-acc-is-h5 {
+  grid-area: exp-acc-is-h5; }
+
+.exp-acc-is-period {
+  grid-area: exp-acc-is-period; }
+
+.exp-acc-is-desc {
+  grid-area: exp-acc-is-desc; }
+
+.exp-acc-is-analista-h5 {
+  grid-area: exp-acc-is-analista-h5; }
+
+.exp-acc-is-analista-period {
+  grid-area: exp-acc-is-analista-period; }
+
+.exp-acc-is-analista-desc {
+  grid-area: exp-acc-is-analista-desc; }
+
+.exp-grid-st-h4-container {
+  grid-area: exp-grid-st-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%;
+  margin-top: 5%; }
+
+.exp-acc-st-h5 {
+  grid-area: exp-acc-st-h5; }
+
+.exp-acc-st-period {
+  grid-area: exp-acc-st-period; }
+
+.exp-acc-st-desc {
+  grid-area: exp-acc-st-desc; }
+
+.exp-meli {
+  grid-area: exp-meli; }
+
+.exp-grid-mp-r-h4-container {
+  grid-area: exp-grid-mp-r-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%; }
+
+.exp-meli-mp-r-h5 {
+  grid-area: exp-meli-mp-r-h5; }
+
+.exp-meli-mp-r-period {
+  grid-area: exp-meli-mp-r-period; }
+
+.exp-meli-mp-r-desc {
+  grid-area: exp-meli-mp-r-desc; }
+
+.exp-grid-wc-h4-container {
+  grid-area: exp-grid-wc-h4-container;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #198597;
+  color: #FFFFFF;
+  padding: 3% 5%;
+  margin-top: 5%; }
+
+.exp-meli-wc-h5 {
+  grid-area: exp-meli-wc-h5; }
+
+.exp-meli-wc-period {
+  grid-area: exp-meli-wc-period; }
+
+.exp-meli-wc-desc {
+  grid-area: exp-meli-wc-desc; }
+
+/* 
+*************************
+*  MEGA QUERIES: 1431px *
+*************************
+*/
+@media (max-width: 1431px) {
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 45px; } }
+
+/* 
+*************************
+*  MEGA QUERIES: 1288px *
+*************************
+*/
+@media (max-width: 1288px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  .header-grid-navbar {
+    font-size: 21px; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 40px; }
+  .home-col-2 p {
+    font-size: 24px; } }
+
+/* 
+*************************
+*  MEGA QUERIES: 1145px *
+*************************
+*/
+@media (max-width: 1145px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  .header-grid-navbar {
+    font-size: 19px; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 35px; }
+  .home-col-2 p {
+    font-size: 21px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 25%; } }
 
 /* 
 *************************
@@ -423,12 +779,235 @@ body {
 *************************
 */
 @media (max-width: 1024px) {
-  .home-col-1 img {
-    width: 400px;
-    height: 700px; }
-  .home-col-2 {
-    width: 400px;
-    height: 700px; } }
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  .header-grid-navbar {
+    font-size: 17px; } }
+
+/* 
+*************************
+*  MEGA QUERIES: 1002px *
+*************************
+*/
+@media (max-width: 1002px) {
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 30px; }
+  .home-col-2 p {
+    font-size: 18px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 44px; }
+  .edu-grid-detail-container {
+    grid-template-columns: 100%;
+    grid-template-areas: "fs-year" "edu-fs-grid-container" "u-year" "edu-u-grid-container" "b-year" "edu-b-grid-container";
+    padding: 20% 15%; }
+  .fs-h2 {
+    padding: 4% 0% 4% 0%; }
+  .u-h2 {
+    padding: 4% 0% 4% 0%; }
+  .b-h2 {
+    padding: 4% 0% 4% 0%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 35%; }
+  .skills-h1 {
+    font-size: 42px; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-h1 {
+    font-size: 42px; } }
+
+/* 
+*************************
+*  MEGA QUERIES: 931px  *
+*************************
+*/
+@media (max-width: 931px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  .menu {
+    width: 70%; }
+  nav ul {
+    gap: 12%; }
+  /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+  .about-me-skill-design,
+  .about-me-skill-responsive,
+  .about-me-skill-security {
+    width: 80px;
+    height: 80px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 14px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 40%;
+    font-size: 16px; }
+  .skills-h1 {
+    font-size: 38px; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-p-slogan {
+    font-size: 16px; } }
+
+/* 
+*************************
+*  MEGA QUERIES: 858px  *
+*************************
+*/
+@media (max-width: 858px) {
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 29px; }
+  .home-col-2 p {
+    font-size: 17px; }
+  /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+  .about-me-h1 {
+    font-size: 46px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 13px; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-h1 {
+    font-size: 36px; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-p-slogan {
+    font-size: 14px; } }
+
+/* 
+*************************
+*  MEGA QUERIES: 831px  *
+*************************
+*/
+@media (max-width: 831px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  nav ul {
+    gap: 10%; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 26px; }
+  .home-col-2 p {
+    font-size: 17px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 40px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 45%;
+    font-size: 14px; }
+  .skills-h1 {
+    font-size: 34px; } }
 
 /* 
 ************************
@@ -436,82 +1015,407 @@ body {
 ************************
 */
 @media (max-width: 768px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
   .header-grid-logo {
     font-size: 30px;
     width: 120px; }
-  .home-col-1 img {
-    width: 300px;
-    height: 580px; }
-  .home-col-2 {
-    width: 300px;
-    height: 580px; }
-  .about-me-grid-container {
-    grid-template-columns: 235px 380px;
-    grid-template-rows: 300px 300px; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 26px; }
+  .home-col-2 p {
+    font-size: 16px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
   .about-me-h1 {
-    padding: 38% 20% 30% 20%; }
-  .about-me-h2 {
-    padding: 45% 15% 2% 15%; }
-  .about-me-p {
-    padding: 0% 10% 5% 10%; } }
+    font-size: 42px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 37px; }
+  .edu-fs-grid-container h2,
+  .edu-u-grid-container h2,
+  .edu-b-grid-container h2 {
+    font-size: 18px; }
+  .edu-fs-grid-container p,
+  .edu-u-grid-container p,
+  .edu-b-grid-container p {
+    font-size: 14px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skills-grid-details-container {
+    padding: 8% 4%; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-h1 {
+    font-size: 30px; } }
 
 /* 
 ************************
-* MEGA QUERIES: 425px  *
+* MEGA QUERIES: 756px  *
 ************************
 */
-@media (max-width: 425px) {
-  .header-grid-container {
-    height: 250px;
-    grid-template-columns: 100%; }
-  .home-col-1 img {
-    width: 350px;
-    height: 550px; }
+@media (max-width: 756px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  .menu {
+    width: 75%; }
+  nav ul {
+    gap: 10%; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
   .home-col-2 h1 {
-    margin-top: 34%; }
+    font-size: 24px; }
+  .home-col-2 p {
+    font-size: 14px; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-p-slogan {
+    font-size: 12px; } }
+
+/* 
+************************
+* MEGA QUERIES: 687px  *
+************************
+*/
+@media (max-width: 687px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  nav ul {
+    gap: 9%; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 22px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-h1 {
+    font-size: 37px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 10px; }
+  .about-me-skill-design,
+  .about-me-skill-responsive,
+  .about-me-skill-security {
+    width: 65px;
+    height: 65px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 30px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skills-grid-details-container p {
+    padding-left: 35%; }
+  .skills-grid-details-container img {
+    width: 40px;
+    height: 40px; }
+  .skills-h1 {
+    font-size: 28px; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-container {
+    grid-template-columns: 30% 30% repeat(4, 10%); }
+  .footer-grid-p-slogan {
+    font-size: 11px; } }
+
+/* 
+************************
+* MEGA QUERIES: 631px  *
+************************
+*/
+@media (max-width: 631px) {
+  /*
+    ************
+    *  HEADER  *
+    ************
+    */
+  nav {
+    grid-template-columns: 100%; }
+  nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden; }
+  nav ul {
+    flex-direction: column;
+    align-items: center; }
+  nav label {
+    display: inline-flex;
+    cursor: pointer;
+    padding: 2% 3%; }
+  nav #toggle:checked ~ .menu {
+    height: 100%; }
+  .header-menu-img {
+    width: 50px;
+    height: 50px; }
+  .menu ul li {
+    padding: 1%; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-1 {
+    width: 90%;
+    height: 90%; }
   .home-col-2 {
-    width: 350px;
-    height: 350px; }
+    width: 90%;
+    height: 90%;
+    background-color: #D5F2EE;
+    padding: 5%; }
+  .home-col-2 h1 {
+    font-size: 45px; }
+  .home-col-2 p {
+    font-size: 25px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "about-me-grid-h1-container" "about-me-col-3"; }
   .about-me-h1 {
     width: 100%;
-    height: 83px;
-    padding: 3%; }
+    height: 100%;
+    padding: 4%; }
+  .about-me-col-3 {
+    grid-template-columns: 100%;
+    grid-template-areas: "about-me-h2" "about-me-p" "about-me-skill-design" "about-me-skill-text-design" "about-me-skill-responsive" "about-me-skill-text-responsive" "about-me-skill-security" "about-me-skill-text-security";
+    padding: 20% 5%;
+    background-color: #D5F2EE;
+    row-gap: 4%; }
   .about-me-h2 {
     width: 100%;
-    height: 100px;
-    padding: 5%;
-    margin-top: -51%; }
-  .about-me-p {
-    padding: 8%;
-    margin-top: -98%;
-    width: 100%; }
-  .about-me-grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "about-me-h1" "about-me-h2" "about-me-p";
-    width: 100%;
-    justify-content: center;
-    align-content: center;
+    padding: 0%;
     background-color: #D5F2EE; }
-  .about-me-skills-grid-container {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
+  .about-me-p {
+    width: 100%;
+    padding: 0%;
+    background-color: #D5F2EE; }
+  .about-me-skill-design,
+  .about-me-skill-responsive,
+  .about-me-skill-security {
+    width: 103px;
+    height: 108px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 18px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "edu-grid-h1-container" "edu-grid-detail-container" "edu-grid-detail-container"; }
+    .edu-grid-container h2 {
+      font-size: 24px; }
+    .edu-grid-container p {
+      font-size: 22px; }
+    .edu-grid-container ul {
+      font-size: 20px; }
+  .edu-h1 {
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    font-size: 48px; }
+  .edu-grid-detail-container {
+    padding: 10% 5%; }
+  .fs-year,
+  .u-year,
+  .b-year {
+    font-size: 25px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skills-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "skills-grid-h1-container" "skills-grid-details-container"; }
+  .skills-grid-details-container {
+    padding: 10% 2%;
+    column-gap: 2%; }
+    .skills-grid-details-container img {
+      width: 54px;
+      height: 100%;
+      padding: 1%; }
+  .skills-h1 {
+    font-size: 48px;
+    width: 100%;
+    height: 100%;
+    padding: 4%; }
+  .skill-java,
+  .skill-go,
+  .skill-rest,
+  .skill-spring,
+  .skill-junit,
+  .skill-sql,
+  .skill-maven,
+  .skill-scrum,
+  .skill-git,
+  .skill-github,
+  .skill-html,
+  .skill-css,
+  .skill-node,
+  .skill-javascript,
+  .skill-react,
+  .skill-jira {
+    grid-template-columns: 20% 50%;
+    padding: 2% 4%; }
+    .skill-java p,
+    .skill-go p,
+    .skill-rest p,
+    .skill-spring p,
+    .skill-junit p,
+    .skill-sql p,
+    .skill-maven p,
+    .skill-scrum p,
+    .skill-git p,
+    .skill-github p,
+    .skill-html p,
+    .skill-css p,
+    .skill-node p,
+    .skill-javascript p,
+    .skill-react p,
+    .skill-jira p {
+      padding-left: 10%;
+      font-size: 20px; }
+  /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+  .exp-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "exp-grid-h1-container" "exp-grid-detail-container"; }
+    .exp-grid-container h5, .exp-grid-container p {
+      font-size: 18px; }
+    .exp-grid-container p {
+      font-size: 16px; }
+  .exp-h1 {
+    font-size: 48px;
+    width: 100%;
+    height: 100%;
+    padding: 4%; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-container {
+    grid-template-columns: 25% 35% repeat(4, 10%);
+    grid-template-areas: "footer-grid-logo footer-span footer-span footer-span footer-span footer-span" "footer-grid-p-slogan footer-grid-p-slogan footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb"; }
+  .footer-grid-logo {
+    margin-left: 0%;
+    margin: 10%; }
+  .footer-grid-p-slogan {
+    font-size: 18px;
+    padding: 0%; } }
+
+/* 
+************************
+* MEGA QUERIES: 496px  *
+************************
+*/
+@media (max-width: 496px) {
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    row-gap: 3%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 20%;
+    font-size: 16px; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-container {
+    grid-template-columns: repeat(4, 20%);
+    grid-template-areas: "footer-grid-logo footer-grid-logo footer-grid-logo footer-grid-logo" "footer-grid-p-slogan footer-grid-p-slogan footer-grid-p-slogan footer-grid-p-slogan" "footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb";
+    row-gap: 5%;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-color: #EFFEFD;
-    padding: 40px 0px 40px 0px;
-    width: 100%; }
-  .footer-grid-container {
-    grid-template-columns: 100%;
-    grid-template-columns: auto;
-    height: 300px;
-    gap: 15px;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; }
+    padding: 7%; }
   .footer-grid-logo {
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
@@ -523,41 +1427,58 @@ body {
     border-color: #3CACAE;
     width: 100px;
     text-align: center;
-    margin: 0; }
-  /*
-    .about-me-grid-container{
-        grid-template-columns: 100%;
-        width: 100%;
-        height: 1000px;
-        grid-template-areas:
-        "about-me-h1"
-        "about-me-h2"
-        "about-me-p";
-        background-color: #EFFEFD;
-    }
+    margin: 0; } }
 
-    .span{
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h2{
-        width: 320px;
-        height: 200px;
-        padding: 12% 15% 2% 15%;
-        margin-top: -125%;
-    }
+/* 
+************************
+* MEGA QUERIES: 425px  *
+************************
+*/
+@media (max-width: 425px) {
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-grid-detail-container {
+    padding: 10% 8%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 30%;
+    font-size: 14px; } }
 
-    .about-me-skills-grid-container{
-        padding: 30px 0px 30px 0px;
-        column-gap: 35px;
-        margin-top: -104%;
-
-    }
-
-    .about-me-skill{
-        width: 50px;
-        height: 50px;
-    }*/ }
+/* 
+************************
+* MEGA QUERIES: 402px  *
+************************
+*/
+@media (max-width: 402px) {
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    padding: 21% 7%; } }
 
 /* 
 ************************
@@ -565,24 +1486,66 @@ body {
 ************************
 */
 @media (max-width: 375px) {
-  .home-col-1 img {
-    width: 300px;
-    height: 500px; }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
   .home-col-2 h1 {
-    margin-top: 31%; }
-  .home-col-2 {
-    width: 300px;
-    height: 300px; }
-  .about-me-h2 {
-    width: 100%;
-    height: 100px;
-    padding: 7% 9%;
-    margin-top: -58%;
+    font-size: 40px; }
+  .home-col-2 p {
+    font-size: 23px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    row-gap: 2%; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-grid-detail-container {
+    padding: 10% 9%; }
+  .edu-grid-container h2 {
     font-size: 20px; }
-  .about-me-p {
-    padding: 8%;
-    margin-top: -112%;
-    width: 100%; } }
+  .edu-grid-container p {
+    font-size: 18px; }
+  .edu-grid-container ul {
+    font-size: 15px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 40%; }
+  .skills-grid-details-container {
+    column-gap: 0%; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-p-slogan {
+    font-size: 16px; } }
 
 /* 
 ************************
@@ -590,50 +1553,99 @@ body {
 ************************
 */
 @media (max-width: 320px) {
-  .header-grid-container {
-    height: 300px;
-    grid-template-columns: 100%; }
-  .home-col-1 img {
-    width: 280px;
-    height: 480px; }
-  .home-col-2 {
-    width: 280px;
-    height: 480px; }
-  .footer-grid-container {
-    grid-template-columns: 100%;
-    grid-template-columns: auto;
-    height: 300px;
-    gap: 15px;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center; }
-  .about-me-grid-container {
-    grid-template-columns: 100%;
-    width: 100%;
-    height: 1000px;
-    grid-template-areas: "about-me-h1" "about-me-h2" "about-me-p";
-    background-color: #EFFEFD; }
-  .about-me-h1 {
-    width: 320px;
-    height: 83px;
-    padding: 3%;
-    margin-top: -200px; }
-  .span {
-    background-color: #EFFEFD; }
-  .about-me-h2 {
-    width: 320px;
-    height: 200px;
-    padding: 12% 15% 2% 15%;
-    margin-top: -125%; }
-  .about-me-p {
-    padding: 0% 10% 5% 10%;
-    margin-top: -157%; }
-  .about-me-skills-grid-container {
-    grid-template-columns: 30% 30% 30%;
-    padding: 20px 0px 20px 0px;
-    column-gap: 10px;
-    margin-top: -97%; }
-  .about-me-skill {
-    width: 50px;
-    height: 50px; } }
+  /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+  .home-col-2 h1 {
+    font-size: 35px; }
+  .home-col-2 p {
+    font-size: 21px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    padding: 25% 5%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java,
+  .skill-go,
+  .skill-rest,
+  .skill-spring,
+  .skill-junit,
+  .skill-sql,
+  .skill-maven,
+  .skill-scrum,
+  .skill-git,
+  .skill-github,
+  .skill-html,
+  .skill-css,
+  .skill-node,
+  .skill-javascript,
+  .skill-react,
+  .skill-jira {
+    grid-template-columns: 20% 40%;
+    grid-template-areas: "img-java img-git" "img-go img-github" "img-rest img-html" "img-spring img-css" "img-junit img-node" "img-sql img-javascript" "img-maven img-react" "img-scrum img-jira";
+    gap: 5%; }
+    .skill-java p,
+    .skill-go p,
+    .skill-rest p,
+    .skill-spring p,
+    .skill-junit p,
+    .skill-sql p,
+    .skill-maven p,
+    .skill-scrum p,
+    .skill-git p,
+    .skill-github p,
+    .skill-html p,
+    .skill-css p,
+    .skill-node p,
+    .skill-javascript p,
+    .skill-react p,
+    .skill-jira p {
+      display: none; }
+  .img-java {
+    grid-area: img-java; }
+  .img-go {
+    grid-area: img-go; }
+  .img-rest {
+    grid-area: img-rest; }
+  .img-spring {
+    grid-area: img-spring; }
+  .img-junit {
+    grid-area: img-junit; }
+  .img-sql {
+    grid-area: img-sql; }
+  .img-maven {
+    grid-area: img-maven; }
+  .img-scrum {
+    grid-area: img-scrum; }
+  .img-git {
+    grid-area: img-git; }
+  .img-github {
+    grid-area: img-github; }
+  .img-html {
+    grid-area: img-html; }
+  .img-css {
+    grid-area: img-css; }
+  .img-node {
+    grid-area: img-node; }
+  .img-javascript {
+    grid-area: img-javascript; }
+  .img-react {
+    grid-area: img-react; }
+  .img-jira {
+    grid-area: img-jira; }
+  /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+  .footer-grid-p-slogan {
+    font-size: 15px; } }

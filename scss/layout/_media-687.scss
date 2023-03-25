@@ -1,0 +1,87 @@
+/* 
+************************
+* MEGA QUERIES: 687px  *
+************************
+*/
+@media  (max-width: 687px) {
+    /*
+    ************
+    *  HEADER  *
+    ************
+    */
+    nav ul{
+        gap: 9%;
+    }
+
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1{
+        font-size: 22px;
+    }
+    
+    /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+    .about-me-h1{
+        font-size: 37px;
+    }
+
+    .about-me-skill-text-design,
+    .about-me-skill-text-responsive,
+    .about-me-skill-text-security{
+        font-size: 10px;
+    }
+
+    .about-me-skill-design,
+    .about-me-skill-responsive,
+    .about-me-skill-security{
+        width: 65px;
+        height: 65px;
+    }
+
+    /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+    .edu-h1{
+        font-size: 30px;
+    }
+
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skills-grid-details-container{
+        p{
+            padding-left: 35%;
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .skills-h1 {
+        font-size: 28px;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-container{
+        grid-template-columns: 30% 30% repeat(4, 10%);
+    }
+    .footer-grid-p-slogan{
+        font-size: 11px;
+    }
+}

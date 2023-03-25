@@ -1,0 +1,41 @@
+/* 
+************************
+* MEGA QUERIES: 756px  *
+************************
+*/
+@media  (max-width: 756px) {
+    /*
+    ************
+    *  HEADER  *
+    ************
+    */
+    .menu {
+        width: 75%;
+    }
+
+    nav ul{
+        gap: 10%;
+    }
+
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1{
+        font-size: 24px;
+    }
+
+    .home-col-2 p{
+        font-size: 14px;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-p-slogan{
+        font-size: 12px;
+    }
+}

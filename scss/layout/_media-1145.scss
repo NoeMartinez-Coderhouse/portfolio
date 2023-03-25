@@ -1,16 +1,29 @@
 /* 
-************************
-* MEGA QUERIES: 425px  *
-************************
+*************************
+*  MEGA QUERIES: 1145px *
+*************************
 */
-@media  (max-width: 425px) {
-    /* 
-    ********************
-    *  EDUCATION PAGE  *
-    ********************
+@media  (max-width: 1145px) {
+    /*
+    ************
+    *  HEADER  *
+    ************
     */
-    .edu-grid-detail-container{
-        padding: 10% 8%;
+    .header-grid-navbar{
+        font-size: 19px;
+    }
+
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1{
+        font-size: 35px;
+    }
+
+    .home-col-2 p{
+        font-size: 21px;
     }
 
     /* 
@@ -35,8 +48,7 @@
     .skill-react,
     .skill-jira{
         p{
-            padding-left: 30%;
-            font-size: 14px;
+            padding-left: 25%;
         }
     }
 }

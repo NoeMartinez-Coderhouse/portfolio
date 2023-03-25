@@ -1,0 +1,52 @@
+/* 
+*************************
+*  MEGA QUERIES: 858px  *
+*************************
+*/
+@media  (max-width: 858px) {
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1{
+        font-size: 29px;
+    }
+
+    .home-col-2 p{
+        font-size: 17px;
+    }
+
+    /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+    .about-me-h1{
+        font-size: 46px;
+    }
+
+    .about-me-skill-text-design,
+    .about-me-skill-text-responsive,
+    .about-me-skill-text-security{
+        font-size: 13px;
+    }
+
+    /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+    .exp-h1{
+        font-size: 36px;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-p-slogan{
+        font-size: 14px;
+    }
+}

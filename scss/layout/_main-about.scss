@@ -1,11 +1,12 @@
 .about-me-grid-container{
     display: grid;
-    grid-template-columns: 335px 580px;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 25% 45%;
+    grid-template-rows: 75% 25%;
     grid-template-areas:
-    "about-me-h1 about-me-h2"
-    "about-me-span about-me-p";
+    "about-me-grid-h1-container about-me-col-3"
+    "about-me-span about-me-col-3";
     width: 100%;
+    height: 100%;
     justify-content: center;
     align-content: center;
     background-color: #D5F2EE;
@@ -16,6 +17,21 @@
     background-color: #D5F2EE;
 }
 
+.about-me-grid-h1-container{
+    grid-area: about-me-grid-h1-container;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-areas:
+    "about-me-h1";
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #198597;
+}
+
 .about-me-h1{
     grid-area: about-me-h1;
     background-color: #198597;
@@ -23,7 +39,7 @@
     font-size: 48px;
     color: #FFFFFF;
     text-align: center;
-    padding: 45% 31% 78% 31%;
+    //padding-top: 70%;
 }
 
 .about-me-h2{
@@ -31,7 +47,7 @@
     background-color: #EFFEFD;
     font-weight: 300;
     color: #3CACAE;
-    padding: 45% 15% 2% 15%;
+    padding: 0% 0% 10% 0%;
 }
 
 .about-me-p{
@@ -39,27 +55,63 @@
     background-color: #EFFEFD;
     font-weight: 100;
     color: #3CACAE;
-    padding: 0% 10% 5% 10%;
+    padding: 0% 0% 20% 0%;
 }
 
-.about-me-skills-grid-container{
+.about-me-col-3{
+    grid-area: about-me-col-3;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "about-me-h2 about-me-h2 about-me-h2"
+    "about-me-p about-me-p about-me-p"
+    "about-me-skill-design about-me-skill-responsive about-me-skill-security"
+    "about-me-skill-text-design about-me-skill-text-responsive about-me-skill-text-security";
+    width: 100%;
+    height: 100%;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
     background-color: #EFFEFD;
-    padding: 40px 0px 40px 0px;
-    width: 100%;
+    padding: 15% 7% 15% 7%;
 }
 
-.about-me-skill{
+.about-me-skill-design{
+    grid-area: about-me-skill-design;
+}
+
+.about-me-skill-responsive{
+    grid-area: about-me-skill-responsive;
+}
+
+.about-me-skill-security{
+    grid-area: about-me-skill-security;
+}
+
+.about-me-skill-text-design{
+    grid-area: about-me-skill-text-design;
+}
+
+.about-me-skill-text-responsive{
+    grid-area: about-me-skill-text-responsive;
+}
+
+.about-me-skill-text-security{
+    grid-area: about-me-skill-text-security;
+}
+
+.about-me-skill-design,
+.about-me-skill-responsive,
+.about-me-skill-security{
     width: 103px;
     height: 108px;
 }
 
-.about-me-skill-text{
+.about-me-skill-text-design,
+.about-me-skill-text-responsive,
+.about-me-skill-text-security{
     font-weight: 500;
     color: #3CACAE;
 }

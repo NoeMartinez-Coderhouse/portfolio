@@ -4,35 +4,74 @@
 ************************
 */
 @media  (max-width: 768px) {
+    /*
+    ************
+    *  HEADER  *
+    ************
+    */
     .header-grid-logo{
         font-size: 30px;
         width: 120px;
     }
 
-    .home-col-1 img{
-        width: 300px;
-        height: 580px;
+    /* 
+    ***************
+    *  HOME PAGE  *
+    ***************
+    */
+    .home-col-2 h1{
+        font-size: 26px;
     }
 
-    .home-col-2{
-        width: 300px;
-        height: 580px;
+    .home-col-2 p{
+        font-size: 16px;
     }
 
-    .about-me-grid-container{
-        grid-template-columns: 235px 380px;
-        grid-template-rows: 300px 300px;
-    }
-    
+    /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
     .about-me-h1{
-        padding: 38% 20% 30% 20%;
+        font-size: 42px;
     }
-    
-    .about-me-h2{
-        padding: 45% 15% 2% 15%;
+
+    /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+    .edu-h1{
+        font-size: 37px;
     }
-    
-    .about-me-p{
-        padding: 0% 10% 5% 10%;
+
+    .edu-fs-grid-container h2,
+    .edu-u-grid-container h2,
+    .edu-b-grid-container h2 {
+        font-size: 18px;
+    }
+
+    .edu-fs-grid-container p,
+    .edu-u-grid-container p,
+    .edu-b-grid-container p {
+        font-size: 14px;
+    }
+
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skills-grid-details-container{
+        padding: 8% 4%;
+    }
+
+    /* 
+    *********************
+    *  EXPERIENCE PAGE  *
+    *********************
+    */
+    .exp-h1{
+        font-size: 30px;
     }
 }

@@ -21,5 +21,8 @@
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.11.11"
   }
 }

@@ -56,7 +56,7 @@
     .home-col-2{
         width: 90%;
         height: 90%;
-        background-color: #D5F2EE;
+        background-color: $primary-background;
         padding: 5%;
     }
 
@@ -99,20 +99,20 @@
             "about-me-skill-security"
             "about-me-skill-text-security";
         padding: 20% 5%;
-        background-color: #D5F2EE;
+        background-color: $primary-background;
         row-gap: 4%;
     }
 
     .about-me-h2{
         width: 100%;
         padding: 0%;
-        background-color: #D5F2EE;
+        background-color: $primary-background;
     }
 
     .about-me-p{
         width: 100%;
         padding: 0%;
-        background-color: #D5F2EE;
+        background-color: $primary-background;
     }
 
     .about-me-skill-design,

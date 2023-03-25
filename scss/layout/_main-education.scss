@@ -1,6 +1,5 @@
 .edu-grid-container{
     display: grid;
-    grid-template-columns: 25% 45%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
     "edu-grid-h1-container edu-grid-detail-container"
@@ -9,7 +8,8 @@
     height: 100%;
     justify-content: center;
     align-content: center;
-    background-color: #D5F2EE;
+    background-color: $primary-background;
+    @include tam-container-grid;
 }
 
 .edu-grid-h1-container{
@@ -24,12 +24,12 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-color: #FFF9BE;
+    background-color: $yellow-background;
 }
 
 .edu-h1{
     grid-area: edu-h1;
-    color: #72CFD0;
+    color: $green-font-background;
     font-weight: 200;
     font-size: 48px;
     text-align: center;
@@ -37,7 +37,7 @@
 
 .edu-span{
     grid-area: edu-span;
-    background-color: #D5F2EE;
+    background-color: $primary-background;
 }
 
 .edu-grid-detail-container{
@@ -50,12 +50,12 @@
     "b-year edu-b-grid-container";
     justify-items: center;
     align-items: center;
-    background-color: #EFFEFD;
+    background-color: $big-main-background;
     padding: 20% 10%;
 
     p{
-        color: #EFE79F;
-        background-color: #EFFEFD;
+        color: $yellow-font-background;
+        background-color: $big-main-background;
     }
 }
 
@@ -80,8 +80,8 @@
     }
 
     h2, p, ul{
-        color: #3CACAE;
-        background-color: #EFFEFD;
+        color: $secondary-background;
+        background-color: $big-main-background;
     }
 
     ul{
@@ -121,8 +121,8 @@
     }
 
     h2, p{
-        color: #3CACAE;
-        background-color: #EFFEFD;
+        color: $secondary-background;
+        background-color: $big-main-background;
     }
 
     p{
@@ -155,8 +155,8 @@
     }
 
     h2, p{
-        color: #3CACAE;
-        background-color: #EFFEFD;
+        color: $secondary-background;
+        background-color: $big-main-background;
     }
 }
 
@@ -172,6 +172,6 @@
 
 .b-description{
     grid-area: b-description;
-    color: #3CACAE;
-    background-color: #EFFEFD;
+    color: $secondary-background;
+    background-color: $big-main-background;
 }

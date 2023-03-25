@@ -1,10 +1,20 @@
+/* 
+************
+* COLOURS  *
+************
+*/
+/* 
+**********
+* FONTS  *
+**********
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .header-grid-container {
   background-color: #D5F2EE;
@@ -87,7 +97,7 @@ nav label {
 
 .footer-grid-p-slogan {
   grid-area: footer-grid-p-slogan;
-  font-family: 'Roboto Serif', serif;
+  font-family: "Roboto Serif", serif;
   font-size: 18px;
   font-style: italic;
   color: #3CACAE;
@@ -173,14 +183,14 @@ nav label {
 
 .about-me-grid-container {
   display: grid;
-  grid-template-columns: 25% 45%;
   grid-template-rows: 75% 25%;
   grid-template-areas: "about-me-grid-h1-container about-me-col-3" "about-me-span about-me-col-3";
   width: 100%;
   height: 100%;
   justify-content: center;
   align-content: center;
-  background-color: #D5F2EE; }
+  background-color: #D5F2EE;
+  grid-template-columns: 25% 45%; }
 
 .about-me-span {
   grid-area: about-me-span;
@@ -268,14 +278,14 @@ nav label {
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: 45% 25%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "skills-grid-details-container skills-grid-h1-container" "skills-grid-details-container skills-span";
   width: 100%;
   height: 100%;
   justify-content: center;
   align-content: center;
-  background-color: #D5F2EE; }
+  background-color: #D5F2EE;
+  grid-template-columns: 45% 25%; }
 
 .skills-grid-details-container {
   grid-area: skills-grid-details-container;
@@ -412,14 +422,14 @@ nav label {
 
 .edu-grid-container {
   display: grid;
-  grid-template-columns: 25% 45%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "edu-grid-h1-container edu-grid-detail-container" "edu-span edu-grid-detail-container";
   width: 100%;
   height: 100%;
   justify-content: center;
   align-content: center;
-  background-color: #D5F2EE; }
+  background-color: #D5F2EE;
+  grid-template-columns: 25% 45%; }
 
 .edu-grid-h1-container {
   grid-area: edu-grid-h1-container;
@@ -542,14 +552,14 @@ nav label {
 
 .exp-grid-container {
   display: grid;
-  grid-template-columns: 45% 25%;
   grid-template-rows: 50% 50%;
   grid-template-areas: "exp-grid-detail-container exp-grid-h1-container" "exp-grid-detail-container exp-span";
   width: 100%;
   height: 100%;
   justify-content: center;
   align-content: center;
-  background-color: #D5F2EE; }
+  background-color: #D5F2EE;
+  grid-template-columns: 45% 25%; }
   .exp-grid-container h2, .exp-grid-container h3, .exp-grid-container h5, .exp-grid-container p {
     color: #3CACAE; }
   .exp-grid-container h2 {

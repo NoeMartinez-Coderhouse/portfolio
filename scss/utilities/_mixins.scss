@@ -1,0 +1,7 @@
+@mixin tam-container-grid {
+    grid-template-columns: 25% 45%;
+}
+
+@mixin tam-container-grid-invertido {
+    grid-template-columns: 45% 25%;
+}

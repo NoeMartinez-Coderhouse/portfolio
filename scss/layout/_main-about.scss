@@ -1,6 +1,5 @@
 .about-me-grid-container{
     display: grid;
-    grid-template-columns: 25% 45%;
     grid-template-rows: 75% 25%;
     grid-template-areas:
     "about-me-grid-h1-container about-me-col-3"
@@ -9,12 +8,13 @@
     height: 100%;
     justify-content: center;
     align-content: center;
-    background-color: #D5F2EE;
+    background-color: $primary-background;
+    @include tam-container-grid;
 }
 
 .about-me-span{
     grid-area: about-me-span;
-    background-color: #D5F2EE;
+    background-color: $primary-background;
 }
 
 .about-me-grid-h1-container{
@@ -29,32 +29,31 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-color: #198597;
+    background-color: $details-background;
 }
 
 .about-me-h1{
     grid-area: about-me-h1;
-    background-color: #198597;
+    background-color: $details-background;
     font-weight: 200;
     font-size: 48px;
-    color: #FFFFFF;
+    color: $white-color;
     text-align: center;
-    //padding-top: 70%;
 }
 
 .about-me-h2{
     grid-area: about-me-h2;
-    background-color: #EFFEFD;
+    background-color: $big-main-background;
     font-weight: 300;
-    color: #3CACAE;
+    color: $secondary-background;
     padding: 0% 0% 10% 0%;
 }
 
 .about-me-p{
     grid-area: about-me-p;
-    background-color: #EFFEFD;
+    background-color: $big-main-background;
     font-weight: 100;
-    color: #3CACAE;
+    color: $secondary-background;
     padding: 0% 0% 20% 0%;
 }
 
@@ -74,7 +73,7 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-color: #EFFEFD;
+    background-color: $big-main-background;
     padding: 15% 7% 15% 7%;
 }
 
@@ -113,5 +112,5 @@
 .about-me-skill-text-responsive,
 .about-me-skill-text-security{
     font-weight: 500;
-    color: #3CACAE;
+    color: $secondary-background;
 }

@@ -1,6 +1,5 @@
 .skills-grid-container{
     display: grid;
-    grid-template-columns: 45% 25%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
     "skills-grid-details-container skills-grid-h1-container"
@@ -9,7 +8,8 @@
     height: 100%;
     justify-content: center;
     align-content: center;
-    background-color: #D5F2EE;
+    background-color: $primary-background;
+    @include tam-container-grid-invertido;
 }
 
 .skills-grid-details-container{
@@ -28,7 +28,7 @@
     "skill-scrum skill-jira";
     justify-items: center;
     align-items: center;
-    background-color: rgba(20, 109, 135, 0.19);
+    background-color: $light-green-background;
     width: 100%;
     height: 100%;
     padding: 8%;
@@ -52,12 +52,12 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    background-color: rgba(248, 165, 119, 0.77);
+    background-color: $orange-background;
 }
 
 .skills-h1{
     grid-area: skills-h1;
-    color: #FFFFFF;
+    color: $white-color;
     justify-content: center;
     justify-items: center;
     text-align: center;
@@ -67,7 +67,7 @@
 
 .skills-span{
     grid-area: skills-span;
-    background-color: #D5F2EE;
+    background-color: $primary-background;
 }
 
 .skill-go{
@@ -159,7 +159,7 @@
 
     p{
         font-weight: 400;
-        color: #3CACAE;
+        color: $secondary-background;
         padding-left: 15%;
     }
 }

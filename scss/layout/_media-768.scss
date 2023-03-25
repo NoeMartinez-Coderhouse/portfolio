@@ -33,7 +33,27 @@
     **************
     */
     .about-me-h1{
-        padding-top: 120%;
         font-size: 42px;
+    }
+
+    /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+    .edu-h1{
+        font-size: 37px;
+    }
+
+    .edu-fs-grid-container h2,
+    .edu-u-grid-container h2,
+    .edu-b-grid-container h2 {
+        font-size: 18px;
+    }
+
+    .edu-fs-grid-container p,
+    .edu-u-grid-container p,
+    .edu-b-grid-container p {
+        font-size: 14px;
     }
 }

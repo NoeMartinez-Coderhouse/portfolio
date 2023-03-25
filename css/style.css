@@ -175,7 +175,7 @@ nav label {
   display: grid;
   grid-template-columns: 25% 45%;
   grid-template-rows: 75% 25%;
-  grid-template-areas: "about-me-h1 about-me-col-3" "about-me-span about-me-col-3";
+  grid-template-areas: "about-me-grid-h1-container about-me-col-3" "about-me-span about-me-col-3";
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -186,14 +186,26 @@ nav label {
   grid-area: about-me-span;
   background-color: #D5F2EE; }
 
+.about-me-grid-h1-container {
+  grid-area: about-me-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "about-me-h1";
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  background-color: #198597; }
+
 .about-me-h1 {
   grid-area: about-me-h1;
   background-color: #198597;
   font-weight: 200;
   font-size: 48px;
   color: #FFFFFF;
-  text-align: center;
-  padding-top: 70%; }
+  text-align: center; }
 
 .about-me-h2 {
   grid-area: about-me-h2;
@@ -396,112 +408,131 @@ nav label {
 
 .edu-grid-container {
   display: grid;
-  grid-template-columns: 30% 70%;
-  grid-template-areas: "edu-h2 edu-fs-grid-container" "edu-h2 edu-u-grid-container" "edu-span edu-b-grid-container";
+  grid-template-columns: 25% 45%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "edu-grid-h1-container edu-grid-detail-container" "edu-span edu-grid-detail-container";
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
+
+.edu-grid-h1-container {
+  grid-area: edu-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "edu-h1";
+  width: 100%;
+  height: 100%;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
-  background-color: #D5F2EE;
-  padding: 2% 10%; }
-  .edu-grid-container h3 {
-    color: #3CACAE;
-    background-color: #EFFEFD; }
+  background-color: #FFF9BE; }
 
-.edu-h2 {
-  grid-area: edu-h2;
-  background-color: #FFF9BE;
+.edu-h1 {
+  grid-area: edu-h1;
   color: #72CFD0;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
   font-weight: 200;
   font-size: 48px;
-  padding: 79.7% 18.2%; }
+  text-align: center; }
 
 .edu-span {
   grid-area: edu-span;
   background-color: #D5F2EE; }
 
-.edu-fs-grid-container {
-  grid-area: edu-fs-grid-container;
+.edu-grid-detail-container {
+  grid-area: edu-grid-detail-container;
   display: grid;
-  grid-template-columns: 20% 50%;
-  grid-template-areas: "fs-year fs-h3" "fs-year fs-p";
-  width: 100%;
-  justify-content: center;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "fs-year edu-fs-grid-container" "u-year edu-u-grid-container" "b-year edu-b-grid-container";
   justify-items: center;
-  align-content: center;
-  align-items: center; }
+  align-items: center;
+  background-color: #EFFEFD;
+  padding: 20% 10%; }
+  .edu-grid-detail-container p {
+    color: #EFE79F;
+    background-color: #EFFEFD; }
 
 .fs-year {
   grid-area: fs-year;
-  padding: 104% 116% 63% 115%;
-  color: #EFE79F;
-  background-color: #EFFEFD; }
+  font-size: 25px; }
 
-.fs-h3 {
-  grid-area: fs-h3;
-  padding: 10.9% 27.8%; }
+.edu-fs-grid-container {
+  grid-area: edu-fs-grid-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "fs-h2" "fs-p";
+  width: 100%;
+  align-content: center;
+  align-items: center; }
+  .edu-fs-grid-container h2 {
+    font-size: 20px; }
+  .edu-fs-grid-container h2, .edu-fs-grid-container p, .edu-fs-grid-container ul {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
+  .edu-fs-grid-container ul {
+    font-size: 14px;
+    padding: 0% 0% 10% 0%; }
+
+.fs-h2 {
+  grid-area: fs-h2;
+  padding: 0% 0% 4% 0%; }
 
 .fs-p {
-  grid-area: fs-p;
-  padding: 10% 31.5%;
-  color: #3CACAE;
-  background-color: #EFFEFD; }
+  grid-area: fs-p; }
+
+.u-year {
+  grid-area: u-year;
+  font-size: 25px; }
 
 .edu-u-grid-container {
   grid-area: edu-u-grid-container;
   display: grid;
-  grid-template-columns: 20% 50%;
-  grid-template-areas: "u-year u-h3" "u-year u-description";
+  grid-template-columns: 100%;
+  grid-template-areas: "u-h2" "u-description";
   width: 100%;
-  justify-content: center;
-  justify-items: center;
   align-content: center;
   align-items: center; }
+  .edu-u-grid-container h2 {
+    font-size: 20px; }
+  .edu-u-grid-container h2, .edu-u-grid-container p {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
+  .edu-u-grid-container p {
+    padding: 0% 0% 10% 0%; }
 
-.u-year {
-  grid-area: u-year;
-  padding: 87% 115.5%;
-  color: #EFE79F;
-  background-color: #EFFEFD; }
-
-.u-h3 {
-  grid-area: u-h3;
-  padding: 12.5% 25.7%; }
+.u-h2 {
+  grid-area: u-h2;
+  padding: 0% 0% 4% 0%; }
 
 .u-description {
-  grid-area: u-description;
-  padding: 12.2% 23%;
-  color: #3CACAE;
-  background-color: #EFFEFD; }
+  grid-area: u-description; }
 
 .edu-b-grid-container {
   grid-area: edu-b-grid-container;
   display: grid;
-  grid-template-columns: 20% 50%;
-  grid-template-areas: "b-year b-h3" "b-year b-description";
+  grid-template-columns: 100%;
+  grid-template-areas: "b-h2" "b-description";
   width: 100%;
-  justify-content: center;
-  justify-items: center;
   align-content: center;
   align-items: center; }
+  .edu-b-grid-container h2 {
+    font-size: 20px; }
+  .edu-b-grid-container h2, .edu-b-grid-container p {
+    color: #3CACAE;
+    background-color: #EFFEFD; }
 
 .b-year {
   grid-area: b-year;
-  padding: 89.4% 115%;
-  color: #EFE79F;
-  background-color: #EFFEFD; }
+  font-size: 25px; }
 
-.b-h3 {
-  grid-area: b-h3;
-  padding: 10.5% 25%; }
+.b-h2 {
+  grid-area: b-h2;
+  padding: 0% 0% 4% 0%; }
 
 .b-description {
   grid-area: b-description;
-  padding: 10% 27.2%;
   color: #3CACAE;
   background-color: #EFFEFD; }
 
@@ -563,14 +594,7 @@ nav label {
   .home-col-2 h1 {
     font-size: 35px; }
   .home-col-2 p {
-    font-size: 21px; }
-  /* 
-    ****************
-    *  ABOUT PAGE  *
-    ****************
-    */
-  .about-me-h1 {
-    padding-top: 85%; } }
+    font-size: 21px; } }
 
 /* 
 *************************
@@ -584,14 +608,7 @@ nav label {
     ************
     */
   .header-grid-navbar {
-    font-size: 17px; }
-  /* 
-    ****************
-    *  ABOUT PAGE  *
-    ****************
-    */
-  .about-me-h1 {
-    padding-top: 90%; } }
+    font-size: 17px; } }
 
 /* 
 *************************
@@ -607,7 +624,24 @@ nav label {
   .home-col-2 h1 {
     font-size: 30px; }
   .home-col-2 p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 44px; }
+  .edu-grid-detail-container {
+    grid-template-columns: 100%;
+    grid-template-areas: "fs-year" "edu-fs-grid-container" "u-year" "edu-u-grid-container" "b-year" "edu-b-grid-container";
+    padding: 20% 15%; }
+  .fs-h2 {
+    padding: 4% 0% 4% 0%; }
+  .u-h2 {
+    padding: 4% 0% 4% 0%; }
+  .b-h2 {
+    padding: 4% 0% 4% 0%; } }
 
 /* 
 *************************
@@ -629,8 +663,6 @@ nav label {
     *  ABOUT PAGE  *
     ****************
     */
-  .about-me-h1 {
-    padding-top: 95%; }
   .about-me-skill-design,
   .about-me-skill-responsive,
   .about-me-skill-security {
@@ -669,7 +701,6 @@ nav label {
     ****************
     */
   .about-me-h1 {
-    padding-top: 100%;
     font-size: 46px; }
   .about-me-skill-text-design,
   .about-me-skill-text-responsive,
@@ -704,7 +735,14 @@ nav label {
   .home-col-2 h1 {
     font-size: 26px; }
   .home-col-2 p {
-    font-size: 17px; } }
+    font-size: 17px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 40px; } }
 
 /* 
 ************************
@@ -735,8 +773,22 @@ nav label {
     **************
     */
   .about-me-h1 {
-    padding-top: 120%;
-    font-size: 42px; } }
+    font-size: 42px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 37px; }
+  .edu-fs-grid-container h2,
+  .edu-u-grid-container h2,
+  .edu-b-grid-container h2 {
+    font-size: 18px; }
+  .edu-fs-grid-container p,
+  .edu-u-grid-container p,
+  .edu-b-grid-container p {
+    font-size: 14px; } }
 
 /* 
 ************************
@@ -796,7 +848,6 @@ nav label {
     **************
     */
   .about-me-h1 {
-    padding-top: 140%;
     font-size: 37px; }
   .about-me-skill-text-design,
   .about-me-skill-text-responsive,
@@ -807,6 +858,13 @@ nav label {
   .about-me-skill-security {
     width: 65px;
     height: 65px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-h1 {
+    font-size: 30px; }
   /*
     ************
     *  FOOTER  *
@@ -873,11 +931,11 @@ nav label {
   .about-me-grid-container {
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "about-me-h1" "about-me-col-3"; }
+    grid-template-areas: "about-me-grid-h1-container" "about-me-col-3"; }
   .about-me-h1 {
     width: 100%;
-    height: 83px;
-    padding: 3%; }
+    height: 100%;
+    padding: 4%; }
   .about-me-col-3 {
     grid-template-columns: 100%;
     grid-template-areas: "about-me-h2" "about-me-p" "about-me-skill-design" "about-me-skill-text-design" "about-me-skill-responsive" "about-me-skill-text-responsive" "about-me-skill-security" "about-me-skill-text-security";
@@ -901,6 +959,32 @@ nav label {
   .about-me-skill-text-responsive,
   .about-me-skill-text-security {
     font-size: 18px; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "edu-grid-h1-container" "edu-grid-detail-container" "edu-grid-detail-container"; }
+    .edu-grid-container h2 {
+      font-size: 24px; }
+    .edu-grid-container p {
+      font-size: 22px; }
+    .edu-grid-container ul {
+      font-size: 20px; }
+  .edu-h1 {
+    width: 100%;
+    height: 100%;
+    padding: 4%;
+    font-size: 48px; }
+  .edu-grid-detail-container {
+    padding: 10% 5%; }
+  .fs-year,
+  .u-year,
+  .b-year {
+    font-size: 25px; }
   /*
     ************
     *  FOOTER  *
@@ -927,8 +1011,6 @@ nav label {
     *  ABOUT ME  *
     **************
     */
-  .about-me-h1 {
-    padding: 4%; }
   .about-me-col-3 {
     row-gap: 3%; }
   /*
@@ -963,6 +1045,15 @@ nav label {
 * MEGA QUERIES: 425px  *
 ************************
 */
+@media (max-width: 425px) {
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-grid-detail-container {
+    padding: 10% 8%; } }
+
 /* 
 ************************
 * MEGA QUERIES: 402px  *
@@ -999,8 +1090,19 @@ nav label {
     */
   .about-me-col-3 {
     row-gap: 2%; }
-  .about-me-h1 {
-    padding: 6%; }
+  /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+  .edu-grid-detail-container {
+    padding: 10% 9%; }
+  .edu-grid-container h2 {
+    font-size: 20px; }
+  .edu-grid-container p {
+    font-size: 18px; }
+  .edu-grid-container ul {
+    font-size: 15px; }
   /*
     ************
     *  FOOTER  *

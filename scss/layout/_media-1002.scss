@@ -16,4 +16,37 @@
     .home-col-2 p{
         font-size: 18px;
     }
+
+    /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+    .edu-h1{
+        font-size: 44px;
+    }
+
+    .edu-grid-detail-container{
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "fs-year"
+        "edu-fs-grid-container"
+        "u-year"
+        "edu-u-grid-container"
+        "b-year"
+        "edu-b-grid-container";
+        padding: 20% 15%;
+    }
+
+    .fs-h2{
+        padding: 4% 0% 4% 0%;
+    }
+
+    .u-h2{
+        padding: 4% 0% 4% 0%;
+    }
+
+    .b-h2{
+        padding: 4% 0% 4% 0%;
+    }
 }

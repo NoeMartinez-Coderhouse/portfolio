@@ -26,8 +26,25 @@
         row-gap: 2%;
     }
 
-    .about-me-h1{
-        padding: 6%;
+    /* 
+    ********************
+    *  EDUCATION PAGE  *
+    ********************
+    */
+    .edu-grid-detail-container{
+        padding: 10% 9%;
+    }
+
+    .edu-grid-container h2 {
+        font-size: 20px;
+    }
+
+    .edu-grid-container p {
+        font-size: 18px;
+    }
+
+    .edu-grid-container ul {
+        font-size: 15px;
     }
 
     /*

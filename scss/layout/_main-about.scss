@@ -3,7 +3,7 @@
     grid-template-columns: 25% 45%;
     grid-template-rows: 75% 25%;
     grid-template-areas:
-    "about-me-h1 about-me-col-3"
+    "about-me-grid-h1-container about-me-col-3"
     "about-me-span about-me-col-3";
     width: 100%;
     height: 100%;
@@ -17,6 +17,21 @@
     background-color: #D5F2EE;
 }
 
+.about-me-grid-h1-container{
+    grid-area: about-me-grid-h1-container;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-areas:
+    "about-me-h1";
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    background-color: #198597;
+}
+
 .about-me-h1{
     grid-area: about-me-h1;
     background-color: #198597;
@@ -24,7 +39,7 @@
     font-size: 48px;
     color: #FFFFFF;
     text-align: center;
-    padding-top: 70%;
+    //padding-top: 70%;
 }
 
 .about-me-h2{

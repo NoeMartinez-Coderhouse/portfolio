@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FNM :: Portfolio personal de Florencia Noelia Martínez. 
+    Soy Desarrolladora Full Stack de Software. En esta sección encontrarás todo sobre mi 
+    Educación. 
+    Te invito a conocerme y a crear tu propio universo :)">
+    <meta name="keywords" content="FNM, Florencia Noelia Martínez, Desarrollo Full Stack, 
+    Desarrollo de Software, Educación, JAVA, GO, HTML, CSS.">
     <title>Educación :: FNM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,45 +19,60 @@
 <body>
     <header>
         <section class="header-grid-container">
-            <a class="header-grid-logo" href="../index.html">FNM</a>
-            <a class="header-grid-navbar" href="./about-me.html">Sobre mí</a>
-            <a class="header-grid-navbar" href="./skills.html">Habilidades</a></li>
-            <a class="header-grid-navbar" href="./education.html">Educación</a></li>
-            <a class="header-grid-navbar" href="./experience.html">Experiencia</a>
+            <nav>
+                <a class="header-grid-logo" href="../index.html">FNM</a>
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><img class="header-menu-img" src="../assets/img/menu.png" alt="Imagen de menú"></label>
+                <div class="menu">
+                    <ul>
+                        <li><a class="header-grid-navbar" href="../pages/about-me.html">Sobre mí</a></li>
+                        <li><a class="header-grid-navbar" href="../pages/skills.html">Habilidades</a></li>
+                        <li><a class="header-grid-navbar" href="../pages/education.html">Educación</a></li>
+                        <li><a class="header-grid-navbar" href="../pages/experience.html">Experiencia</a></li>
+                    </ul>
+                <div>
+            </nav>
         </section>
     </header>
 
     <main>
         <section class="edu-grid-container">
-            <h2 class="edu-h2">Educación</h2>
-
+            <div class="edu-grid-h1-container">
+                <h1 class="edu-h1">Educación</h2>
+            </div>
             <span class="edu-span"></span>
-
-            <div class="edu-fs-grid-container">
-                <p class="fs-year">2023</p>
-                <h3 class="fs-h3">Desarrolladora Full Stack</h3>
-                <p class="fs-p"><i>Institución</i>: <b>Coderhouse</b> <br>
-                    <i>Graduación</i>: <br> Marzo 2024
-                </p>
+            <div class="edu-grid-detail-container">
+                <p class="fs-year"><b>2023</b></p>
+                <div class="edu-fs-grid-container">
+                    <h2 class="fs-h2">Desarrollo Full Stack</h2>
+                    <p class="fs-p"><i>Institución</i>: <b>Coderhouse</b> <br>
+                        <i>Graduación</i>: Marzo 2024 <br>
+                        <i>Cursos</i>:
+                    </p>
+                    <ul>
+                        <li>Desarrollo  Web</li>
+                        <li>JavaScript</li>
+                        <li>React Js</li>
+                        <li>Programación Backend</li>
+                    </ul>
                 </div>
-                
-            </div>
-            
-            <div class="edu-u-grid-container">
-                <p class="u-year">2013</p>
-                <h3 class="u-h3">Licenciatura en Informática</h3>
-                <p class="u-description"><i>Institución</i>: <br> <b>Universidad Nacional del Oeste</b> <br>
-                    Segundo Año
-                </p>
-            </div>
-            
-            <div class="edu-b-grid-container">
-                <p class="b-year">2007</p>
-                <h3 class="b-h3">Bachiller en Economía y Gestión <br>
-                    de las Organizaciones</h3>
-                <p class="b-description"><i>Institución</i>: <b>Nuestra Señora de Fátima</b> <br>
-                    <i>Localidad</i>: Merlo, Buenos Aires, Argentina
-                </p>
+
+                <p class="u-year"><b>2013</b></p>
+                <div class="edu-u-grid-container">
+                    <h2 class="u-h2">Licenciatura en Informática</h2>
+                    <p class="u-description"><i>Institución</i>: <b>Universidad Nacional del Oeste</b> <br>
+                        Segundo Año
+                    </p>
+                </div>
+
+                <p class="b-year"><b>2007</b></p>
+                <div class="edu-b-grid-container">
+                    <h2 class="b-h2">Bachiller en Economía y Gestión 
+                        de las Organizaciones</h2>
+                    <p class="b-description"><i>Institución</i>: <b>Nuestra Señora de Fátima</b> <br>
+                        <i>Localidad</i>: Merlo, Buenos Aires, Argentina
+                    </p>
+                </div>
             </div>
         </section>
     </main>
@@ -59,14 +80,15 @@
     <footer>
         <section class="footer-grid-container">
             <a class="footer-grid-logo" href="../index.html">FNM</a>
-            <p class="footer-grid-p-slogan">"Crea tu propio universo"</p>
-            <a class="footer-grid-img-link" href="https://github.com/NoeMartinez-Coderhouse"><img src="../assets/img/social-media/github.png" alt="GitHub"></a>
-            <a class="footer-grid-img-link" href="https://www.linkedin.com/in/florencianoeliamartinez/"><img src="../assets/img/social-media/linkedin.png" alt="LinkedIn"></a>
-            <a class="footer-grid-img-link" href="https://www.instagram.com/noee.martineez/"><img src="../assets/img/social-media/instagram.png" alt="Instagram"></a>
-            <a class="footer-grid-img-link" href="https://www.facebook.com/noeliia.maart"><img src="../assets/img/social-media/facebook.png" alt="Facebook"></a>
+            <span class="footer-span"></span>
+            <a class="footer-grid-img-github" href="https://github.com/NoeMartinez-Coderhouse"><img src="../assets/img/social-media/github.png" alt="Logo de GitHub"></a>
+            <a class="footer-grid-img-li" href="https://www.linkedin.com/in/florencianoeliamartinez/"><img src="../assets/img/social-media/linkedin.png" alt="Logo de LinkedIn"></a>
+            <a class="footer-grid-img-insta" href="https://www.instagram.com/noee.martineez/"><img src="../assets/img/social-media/instagram.png" alt="Logo de Instagram"></a>
+            <a class="footer-grid-img-fb" href="https://www.facebook.com/noeliia.maart"><img src="../assets/img/social-media/facebook.png" alt="Logo de Facebook"></a>
+            <p class="footer-grid-p-slogan">"Creando mi propio universo"</p>
         </section>
         <section class="footer-grid-copyright">
-            <p><img class="footer-grid-copyright-logo" src="../assets/img/copyright.png" alt="copyright"> <b>Florencia Noelia Martínez</b> 2023</p>
+            <p><img class="footer-grid-copyright-logo" src="../assets/img/copyright.png" alt="Logo de copyright"> <b>Florencia Noelia Martínez</b> 2023</p>
         </section>
     </footer>
 </body>

@@ -25,4 +25,30 @@
     .home-col-2 p{
         font-size: 21px;
     }
+
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skill-java,
+    .skill-go,
+    .skill-rest,
+    .skill-spring,
+    .skill-junit,
+    .skill-sql,
+    .skill-maven,
+    .skill-scrum,
+    .skill-git,
+    .skill-github,
+    .skill-html,
+    .skill-css,
+    .skill-node,
+    .skill-javascript,
+    .skill-react,
+    .skill-jira{
+        p{
+            padding-left: 25%;
+        }
+    }
 }

@@ -26,6 +26,108 @@
         padding: 25% 5%;
     }
 
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skill-java,
+    .skill-go,
+    .skill-rest,
+    .skill-spring,
+    .skill-junit,
+    .skill-sql,
+    .skill-maven,
+    .skill-scrum,
+    .skill-git,
+    .skill-github,
+    .skill-html,
+    .skill-css,
+    .skill-node,
+    .skill-javascript,
+    .skill-react,
+    .skill-jira{
+        grid-template-columns: 20% 40%;
+        grid-template-areas: 
+        "img-java img-git"
+        "img-go img-github"
+        "img-rest img-html"
+        "img-spring img-css"
+        "img-junit img-node"
+        "img-sql img-javascript"
+        "img-maven img-react"
+        "img-scrum img-jira";
+        gap: 5%;
+
+        p{
+            display: none;
+        }
+    }
+
+    .img-java{
+        grid-area: img-java;
+    }
+
+    .img-go{
+        grid-area: img-go;
+    }
+
+    .img-rest{
+        grid-area: img-rest;
+    }
+
+    .img-spring{
+        grid-area: img-spring;
+    }
+
+    .img-junit{
+        grid-area: img-junit;
+    }
+
+    .img-sql{
+        grid-area: img-sql;
+    }
+
+    .img-maven{
+        grid-area: img-maven;
+    }
+
+    .img-scrum{
+        grid-area: img-scrum;
+    }
+
+    .img-git{
+        grid-area: img-git;
+    }
+
+    .img-github{
+        grid-area: img-github;
+    }
+
+    .img-html{
+        grid-area: img-html;
+    }
+
+    .img-css{
+        grid-area: img-css;
+    }
+
+    .img-node{
+        grid-area: img-node;
+    }
+
+    .img-javascript{
+        grid-area: img-javascript;
+    }
+
+    .img-react{
+        grid-area: img-react;
+    }
+
+    .img-jira{
+        grid-area: img-jira;
+    }
+
     /*
     ************
     *  FOOTER  *

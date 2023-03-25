@@ -47,6 +47,36 @@
         font-size: 15px;
     }
 
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skill-java,
+    .skill-go,
+    .skill-rest,
+    .skill-spring,
+    .skill-junit,
+    .skill-sql,
+    .skill-maven,
+    .skill-scrum,
+    .skill-git,
+    .skill-github,
+    .skill-html,
+    .skill-css,
+    .skill-node,
+    .skill-javascript,
+    .skill-react,
+    .skill-jira{
+        p{
+            padding-left: 40%;
+        }
+    }
+
+    .skills-grid-details-container {
+        column-gap: 0%;
+    }
+
     /*
     ************
     *  FOOTER  *

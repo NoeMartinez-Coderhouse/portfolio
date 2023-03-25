@@ -268,25 +268,57 @@ nav label {
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: 300px 300px 400px;
-  grid-template-rows: repeat(8, 70px);
-  grid-template-areas: "skill-java skill-git skills-h2" "skill-go skill-github skills-h2" "skill-rest skill-html skills-h2" "skill-spring skill-css skills-h2" "skill-junit skill-node skills-span" "skill-sql skill-javascript skills-span" "skill-maven skill-react skills-span" "skill-scrum skill-jira skills-span";
+  grid-template-columns: 45% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "skills-grid-details-container skills-grid-h1-container" "skills-grid-details-container skills-span";
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  background-color: #D5F2EE; }
+
+.skills-grid-details-container {
+  grid-area: skills-grid-details-container;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "skill-java skill-git" "skill-go skill-github" "skill-rest skill-html" "skill-spring skill-css" "skill-junit skill-node" "skill-sql skill-javascript" "skill-maven skill-react" "skill-scrum skill-jira";
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(20, 109, 135, 0.19);
+  width: 100%;
+  height: 100%;
+  padding: 8%; }
+  .skills-grid-details-container img {
+    width: 54px;
+    height: 100%;
+    padding: 1%; }
+
+.skills-grid-h1-container {
+  grid-area: skills-grid-h1-container;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "skills-h1";
+  width: 100%;
+  height: 100%;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
-  background-color: #D5F2EE;
-  padding: 20px; }
-  .skills-grid-container img {
-    width: 54px;
-    height: 39px; }
-  .skills-grid-container h2 {
-    font-weight: 200;
-    font-size: 48px; }
+  background-color: rgba(248, 165, 119, 0.77); }
 
-.skill-java {
-  grid-area: skill-java; }
+.skills-h1 {
+  grid-area: skills-h1;
+  color: #FFFFFF;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-weight: 200;
+  font-size: 48px; }
+
+.skills-span {
+  grid-area: skills-span;
+  background-color: #D5F2EE; }
 
 .skill-go {
   grid-area: skill-go; }
@@ -349,31 +381,15 @@ nav label {
 .skill-javascript,
 .skill-react,
 .skill-jira {
-  background-color: rgba(20, 109, 135, 0.19);
   display: grid;
   justify-items: start;
   align-items: center;
   justify-content: center;
   align-content: center;
-  grid-template-columns: 54px 150px;
-  padding: 15.5px 48px; }
-  .skill-java img,
-  .skill-go img,
-  .skill-rest img,
-  .skill-spring img,
-  .skill-junit img,
-  .skill-sql img,
-  .skill-maven img,
-  .skill-scrum img,
-  .skill-git img,
-  .skill-github img,
-  .skill-html img,
-  .skill-css img,
-  .skill-node img,
-  .skill-javascript img,
-  .skill-react img,
-  .skill-jira img {
-    padding-right: 15px; }
+  grid-template-columns: 20% 50%;
+  width: 100%;
+  height: 100%;
+  padding: 3%; }
   .skill-java p,
   .skill-go p,
   .skill-rest p,
@@ -391,20 +407,8 @@ nav label {
   .skill-react p,
   .skill-jira p {
     font-weight: 400;
-    color: #3CACAE; }
-
-.skills-h2 {
-  grid-area: skills-h2;
-  background-color: rgba(248, 165, 119, 0.77);
-  color: #FFFFFF;
-  justify-content: center;
-  justify-items: center;
-  text-align: center;
-  padding: 112px 80px; }
-
-.skills-span {
-  grid-area: skills-span;
-  background-color: #D5F2EE; }
+    color: #3CACAE;
+    padding-left: 15%; }
 
 .edu-grid-container {
   display: grid;
@@ -594,7 +598,29 @@ nav label {
   .home-col-2 h1 {
     font-size: 35px; }
   .home-col-2 p {
-    font-size: 21px; } }
+    font-size: 21px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 25%; } }
 
 /* 
 *************************
@@ -641,7 +667,31 @@ nav label {
   .u-h2 {
     padding: 4% 0% 4% 0%; }
   .b-h2 {
-    padding: 4% 0% 4% 0%; } }
+    padding: 4% 0% 4% 0%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 35%; }
+  .skills-h1 {
+    font-size: 42px; } }
 
 /* 
 *************************
@@ -672,6 +722,31 @@ nav label {
   .about-me-skill-text-responsive,
   .about-me-skill-text-security {
     font-size: 14px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 40%;
+    font-size: 16px; }
+  .skills-h1 {
+    font-size: 38px; }
   /*
     ************
     *  FOOTER  *
@@ -742,7 +817,32 @@ nav label {
     ********************
     */
   .edu-h1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 45%;
+    font-size: 14px; }
+  .skills-h1 {
+    font-size: 34px; } }
 
 /* 
 ************************
@@ -788,7 +888,14 @@ nav label {
   .edu-fs-grid-container p,
   .edu-u-grid-container p,
   .edu-b-grid-container p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skills-grid-details-container {
+    padding: 8% 4%; } }
 
 /* 
 ************************
@@ -865,6 +972,18 @@ nav label {
     */
   .edu-h1 {
     font-size: 30px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skills-grid-details-container p {
+    padding-left: 35%; }
+  .skills-grid-details-container img {
+    width: 40px;
+    height: 40px; }
+  .skills-h1 {
+    font-size: 28px; }
   /*
     ************
     *  FOOTER  *
@@ -985,6 +1104,63 @@ nav label {
   .u-year,
   .b-year {
     font-size: 25px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skills-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "skills-grid-h1-container" "skills-grid-details-container"; }
+  .skills-grid-details-container {
+    padding: 10% 2%;
+    column-gap: 2%; }
+    .skills-grid-details-container img {
+      width: 54px;
+      height: 100%;
+      padding: 1%; }
+  .skills-h1 {
+    font-size: 48px;
+    width: 100%;
+    height: 100%;
+    padding: 4%; }
+  .skill-java,
+  .skill-go,
+  .skill-rest,
+  .skill-spring,
+  .skill-junit,
+  .skill-sql,
+  .skill-maven,
+  .skill-scrum,
+  .skill-git,
+  .skill-github,
+  .skill-html,
+  .skill-css,
+  .skill-node,
+  .skill-javascript,
+  .skill-react,
+  .skill-jira {
+    grid-template-columns: 20% 50%;
+    padding: 2% 4%; }
+    .skill-java p,
+    .skill-go p,
+    .skill-rest p,
+    .skill-spring p,
+    .skill-junit p,
+    .skill-sql p,
+    .skill-maven p,
+    .skill-scrum p,
+    .skill-git p,
+    .skill-github p,
+    .skill-html p,
+    .skill-css p,
+    .skill-node p,
+    .skill-javascript p,
+    .skill-react p,
+    .skill-jira p {
+      padding-left: 10%;
+      font-size: 20px; }
   /*
     ************
     *  FOOTER  *
@@ -1013,6 +1189,29 @@ nav label {
     */
   .about-me-col-3 {
     row-gap: 3%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 20%;
+    font-size: 16px; }
   /*
     ************
     *  FOOTER  *
@@ -1052,7 +1251,30 @@ nav label {
     ********************
     */
   .edu-grid-detail-container {
-    padding: 10% 8%; } }
+    padding: 10% 8%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 30%;
+    font-size: 14px; } }
 
 /* 
 ************************
@@ -1103,6 +1325,30 @@ nav label {
     font-size: 18px; }
   .edu-grid-container ul {
     font-size: 15px; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java p,
+  .skill-go p,
+  .skill-rest p,
+  .skill-spring p,
+  .skill-junit p,
+  .skill-sql p,
+  .skill-maven p,
+  .skill-scrum p,
+  .skill-git p,
+  .skill-github p,
+  .skill-html p,
+  .skill-css p,
+  .skill-node p,
+  .skill-javascript p,
+  .skill-react p,
+  .skill-jira p {
+    padding-left: 40%; }
+  .skills-grid-details-container {
+    column-gap: 0%; }
   /*
     ************
     *  FOOTER  *
@@ -1133,6 +1379,79 @@ nav label {
     */
   .about-me-col-3 {
     padding: 25% 5%; }
+  /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+  .skill-java,
+  .skill-go,
+  .skill-rest,
+  .skill-spring,
+  .skill-junit,
+  .skill-sql,
+  .skill-maven,
+  .skill-scrum,
+  .skill-git,
+  .skill-github,
+  .skill-html,
+  .skill-css,
+  .skill-node,
+  .skill-javascript,
+  .skill-react,
+  .skill-jira {
+    grid-template-columns: 20% 40%;
+    grid-template-areas: "img-java img-git" "img-go img-github" "img-rest img-html" "img-spring img-css" "img-junit img-node" "img-sql img-javascript" "img-maven img-react" "img-scrum img-jira";
+    gap: 5%; }
+    .skill-java p,
+    .skill-go p,
+    .skill-rest p,
+    .skill-spring p,
+    .skill-junit p,
+    .skill-sql p,
+    .skill-maven p,
+    .skill-scrum p,
+    .skill-git p,
+    .skill-github p,
+    .skill-html p,
+    .skill-css p,
+    .skill-node p,
+    .skill-javascript p,
+    .skill-react p,
+    .skill-jira p {
+      display: none; }
+  .img-java {
+    grid-area: img-java; }
+  .img-go {
+    grid-area: img-go; }
+  .img-rest {
+    grid-area: img-rest; }
+  .img-spring {
+    grid-area: img-spring; }
+  .img-junit {
+    grid-area: img-junit; }
+  .img-sql {
+    grid-area: img-sql; }
+  .img-maven {
+    grid-area: img-maven; }
+  .img-scrum {
+    grid-area: img-scrum; }
+  .img-git {
+    grid-area: img-git; }
+  .img-github {
+    grid-area: img-github; }
+  .img-html {
+    grid-area: img-html; }
+  .img-css {
+    grid-area: img-css; }
+  .img-node {
+    grid-area: img-node; }
+  .img-javascript {
+    grid-area: img-javascript; }
+  .img-react {
+    grid-area: img-react; }
+  .img-jira {
+    grid-area: img-jira; }
   /*
     ************
     *  FOOTER  *

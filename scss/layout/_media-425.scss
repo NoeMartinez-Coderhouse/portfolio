@@ -12,4 +12,31 @@
     .edu-grid-detail-container{
         padding: 10% 8%;
     }
+
+    /* 
+    *****************
+    *  SKILLS PAGE  *
+    *****************
+    */
+    .skill-java,
+    .skill-go,
+    .skill-rest,
+    .skill-spring,
+    .skill-junit,
+    .skill-sql,
+    .skill-maven,
+    .skill-scrum,
+    .skill-git,
+    .skill-github,
+    .skill-html,
+    .skill-css,
+    .skill-node,
+    .skill-javascript,
+    .skill-react,
+    .skill-jira{
+        p{
+            padding-left: 30%;
+            font-size: 14px;
+        }
+    }
 }

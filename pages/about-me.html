@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FNM :: Portfolio personal de Florencia Noelia Martínez. 
+    Soy Desarrolladora Full Stack de Software. En esta sección encontrarás todo sobre mí: 
+    gustos, intereses y mi familia. 
+    Te invito a conocerme y a crear tu propio universo:)">
+    <meta name="keywords" content="FNM, Florencia Noelia Martínez, Desarrollo Full Stack, 
+    Desarrollo de Software, Sobre mí, JAVA, GO, HTML, CSS.">
     <title>Sobre mí :: FNM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +19,19 @@
 <body>
     <header>
         <section class="header-grid-container">
-            <a class="header-grid-logo" href="../index.html">FNM</a>
-            <a class="header-grid-navbar" href="./about-me.html">Sobre mí</a>
-            <a class="header-grid-navbar" href="./skills.html">Habilidades</a></li>
-            <a class="header-grid-navbar" href="./education.html">Educación</a></li>
-            <a class="header-grid-navbar" href="./experience.html">Experiencia</a>
+            <nav>
+                <a class="header-grid-logo" href="../index.html">FNM</a>
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><img class="header-menu-img" src="../assets/img/menu.png" alt="Imagen de menú"></label>
+                <div class="menu">
+                    <ul>
+                        <li><a class="header-grid-navbar" href="../pages/about-me.html">Sobre mí</a></li>
+                        <li><a class="header-grid-navbar" href="../pages/skills.html">Habilidades</a></li>
+                        <li><a class="header-grid-navbar" href="../pages/education.html">Educación</a></li>
+                        <li><a class="header-grid-navbar" href="../pages/experience.html">Experiencia</a></li>
+                    </ul>
+                <div>
+            </nav>
         </section>
     </header>
 
@@ -25,38 +39,39 @@
         <section class="about-me-grid-container">
             <h1 class="about-me-h1">Sobre mí</h1>
             <span class="about-me-span"></span>
-            <h2 class="about-me-h2">Interesada en el Desarrollo de Software con
-                metodologías ágiles.</h2>
-            <p class="about-me-p">Me apasiona lo referente a la gestión, organización y ordenamiento
-                de procesos. <br> <br>
-                En 2023, emprendí la increíble aventura del Desarrollo Full Stack. <br> <br>
-                Estudiante de Licenciatura en Informática en la Universidad 
-                Nacional del Oeste y Desarrollo Full Stack en Coderhouse. <br> <br>
-                Tengo 33 años. <br> <br>
-                Vivo en Ituzaingó, Buenos Aires, Argentina. <br> <br>
-                Soy mamá de Nicole y Benji.</p>
-        </section>
-        <section class="about-me-skills-grid-container">
-            <img class="about-me-skill" src="../assets/img/about-me/design.png" alt=diseño">
-            <img class="about-me-skill" src="../assets/img/about-me/responsive.png" alt=responsive">
-            <img class="about-me-skill" src="../assets/img/about-me/security.png" alt=seguridad">
-            <p class="about-me-skill-text">DISEÑO</p>
-            <p class="about-me-skill-text">RESPONSIVE</p>
-            <p class="about-me-skill-text">SEGURIDAD</p>
+            <div class="about-me-col-3">
+                <h2 class="about-me-h2">Interesada en el Desarrollo de Software con
+                    metodologías ágiles.</h2>
+                <p class="about-me-p">Me apasiona lo referente a la gestión, organización y ordenamiento
+                    de procesos. <br> <br>
+                    En 2023, emprendí la increíble aventura del Desarrollo Full Stack. <br> <br>
+                    Estudiante de Licenciatura en Informática en la Universidad 
+                    Nacional del Oeste y Desarrollo Full Stack en Coderhouse. <br> <br>
+                    Tengo 33 años. <br> <br>
+                    Vivo en Ituzaingó, Buenos Aires, Argentina. <br> <br>
+                    Soy mamá de Nicole y Benji.</p>
+                <img class="about-me-skill-design" src="../assets/img/about-me/design.png" alt="Imagen que representa el concepto de diseño">
+                <img class="about-me-skill-responsive" src="../assets/img/about-me/responsive.png" alt="Imagen que representa el concepto de responsive">
+                <img class="about-me-skill-security" src="../assets/img/about-me/security.png" alt="Imagen que representa el concepto de seguridad">
+                <p class="about-me-skill-text-design">DISEÑO</p>
+                <p class="about-me-skill-text-responsive">RESPONSIVE</p>
+                <p class="about-me-skill-text-security">SEGURIDAD</p>
+                </div>
         </section>
     </main>
 
     <footer>
         <section class="footer-grid-container">
             <a class="footer-grid-logo" href="../index.html">FNM</a>
-            <p class="footer-grid-p-slogan">"Crea tu propio universo"</p>
-            <a class="footer-grid-img-link" href="https://github.com/NoeMartinez-Coderhouse"><img src="../assets/img/social-media/github.png" alt="GitHub"></a>
-            <a class="footer-grid-img-link" href="https://www.linkedin.com/in/florencianoeliamartinez/"><img src="../assets/img/social-media/linkedin.png" alt="LinkedIn"></a>
-            <a class="footer-grid-img-link" href="https://www.instagram.com/noee.martineez/"><img src="../assets/img/social-media/instagram.png" alt="Instagram"></a>
-            <a class="footer-grid-img-link" href="https://www.facebook.com/noeliia.maart"><img src="../assets/img/social-media/facebook.png" alt="Facebook"></a>
+            <span class="footer-span"></span>
+            <a class="footer-grid-img-github" href="https://github.com/NoeMartinez-Coderhouse"><img src="../assets/img/social-media/github.png" alt="Logo de GitHub"></a>
+            <a class="footer-grid-img-li" href="https://www.linkedin.com/in/florencianoeliamartinez/"><img src="../assets/img/social-media/linkedin.png" alt="Logo de LinkedIn"></a>
+            <a class="footer-grid-img-insta" href="https://www.instagram.com/noee.martineez/"><img src="../assets/img/social-media/instagram.png" alt="Logo de Instagram"></a>
+            <a class="footer-grid-img-fb" href="https://www.facebook.com/noeliia.maart"><img src="../assets/img/social-media/facebook.png" alt="Logo de Facebook"></a>
+            <p class="footer-grid-p-slogan">"Creando mi propio universo"</p>
         </section>
         <section class="footer-grid-copyright">
-            <p><img class="footer-grid-copyright-logo" src="../assets/img/copyright.png" alt="copyright"> <b>Florencia Noelia Martínez</b> 2023</p>
+            <p><img class="footer-grid-copyright-logo" src="../assets/img/copyright.png" alt="Logo de copyright"> <b>Florencia Noelia Martínez</b> 2023</p>
         </section>
     </footer>
 </body>

@@ -1,0 +1,52 @@
+/* 
+************************
+* MEGA QUERIES: 496px  *
+************************
+*/
+@media  (max-width: 496px) {
+    /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+    .about-me-h1{
+        padding: 4%;
+    }
+
+    .about-me-col-3{
+        row-gap: 3%;
+    }
+
+    /*
+    ************
+    *  FOOTER  *
+    ************
+    */
+    .footer-grid-container{
+        grid-template-columns: repeat(4, 20%);
+        grid-template-areas: 
+        "footer-grid-logo footer-grid-logo footer-grid-logo footer-grid-logo"
+        "footer-grid-p-slogan footer-grid-p-slogan footer-grid-p-slogan footer-grid-p-slogan"
+        "footer-grid-img-github footer-grid-img-li footer-grid-img-insta footer-grid-img-fb";
+        row-gap: 5%;
+        justify-content: center;
+        justify-items: center;
+        align-content:  center;
+        align-items: center;
+        padding: 7%;
+    }
+
+    .footer-grid-logo {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: #3CACAE;
+        text-decoration: none;
+        border: 3px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #3CACAE;
+        width: 100px;
+        text-align: center;
+        margin: 0;
+    }
+}

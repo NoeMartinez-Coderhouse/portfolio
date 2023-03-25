@@ -22,11 +22,37 @@
         font-size: 22px;
     }
     
+    /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+    .about-me-h1{
+        padding-top: 140%;
+        font-size: 37px;
+    }
+
+    .about-me-skill-text-design,
+    .about-me-skill-text-responsive,
+    .about-me-skill-text-security{
+        font-size: 10px;
+    }
+
+    .about-me-skill-design,
+    .about-me-skill-responsive,
+    .about-me-skill-security{
+        width: 65px;
+        height: 65px;
+    }
+
     /*
     ************
     *  FOOTER  *
     ************
     */
+    .footer-grid-container{
+        grid-template-columns: 30% 30% repeat(4, 10%);
+    }
     .footer-grid-p-slogan{
         font-size: 11px;
     }

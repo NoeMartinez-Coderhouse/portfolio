@@ -17,6 +17,28 @@
         gap: 12%;
     }
 
+    /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+    .about-me-h1{
+        padding-top: 95%;
+    }
+
+    .about-me-skill-design,
+    .about-me-skill-responsive,
+    .about-me-skill-security{
+        width: 80px;
+        height: 80px;
+    }
+
+    .about-me-skill-text-design,
+    .about-me-skill-text-responsive,
+    .about-me-skill-text-security{
+        font-size: 14px;
+    }
+
     /*
     ************
     *  FOOTER  *

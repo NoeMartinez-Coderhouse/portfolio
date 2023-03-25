@@ -173,10 +173,11 @@ nav label {
 
 .about-me-grid-container {
   display: grid;
-  grid-template-columns: 335px 580px;
-  grid-template-rows: 400px 400px;
-  grid-template-areas: "about-me-h1 about-me-h2" "about-me-span about-me-p";
+  grid-template-columns: 25% 45%;
+  grid-template-rows: 75% 25%;
+  grid-template-areas: "about-me-h1 about-me-col-3" "about-me-span about-me-col-3";
   width: 100%;
+  height: 100%;
   justify-content: center;
   align-content: center;
   background-color: #D5F2EE; }
@@ -192,38 +193,64 @@ nav label {
   font-size: 48px;
   color: #FFFFFF;
   text-align: center;
-  padding: 45% 31% 78% 31%; }
+  padding-top: 70%; }
 
 .about-me-h2 {
   grid-area: about-me-h2;
   background-color: #EFFEFD;
   font-weight: 300;
   color: #3CACAE;
-  padding: 45% 15% 2% 15%; }
+  padding: 0% 0% 10% 0%; }
 
 .about-me-p {
   grid-area: about-me-p;
   background-color: #EFFEFD;
   font-weight: 100;
   color: #3CACAE;
-  padding: 0% 10% 5% 10%; }
+  padding: 0% 0% 20% 0%; }
 
-.about-me-skills-grid-container {
+.about-me-col-3 {
+  grid-area: about-me-col-3;
   display: grid;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: auto;
+  grid-template-areas: "about-me-h2 about-me-h2 about-me-h2" "about-me-p about-me-p about-me-p" "about-me-skill-design about-me-skill-responsive about-me-skill-security" "about-me-skill-text-design about-me-skill-text-responsive about-me-skill-text-security";
+  width: 100%;
+  height: 100%;
   justify-content: center;
   justify-items: center;
   align-content: center;
   align-items: center;
   background-color: #EFFEFD;
-  padding: 40px 0px 40px 0px;
-  width: 100%; }
+  padding: 15% 7% 15% 7%; }
 
-.about-me-skill {
+.about-me-skill-design {
+  grid-area: about-me-skill-design; }
+
+.about-me-skill-responsive {
+  grid-area: about-me-skill-responsive; }
+
+.about-me-skill-security {
+  grid-area: about-me-skill-security; }
+
+.about-me-skill-text-design {
+  grid-area: about-me-skill-text-design; }
+
+.about-me-skill-text-responsive {
+  grid-area: about-me-skill-text-responsive; }
+
+.about-me-skill-text-security {
+  grid-area: about-me-skill-text-security; }
+
+.about-me-skill-design,
+.about-me-skill-responsive,
+.about-me-skill-security {
   width: 103px;
   height: 108px; }
 
-.about-me-skill-text {
+.about-me-skill-text-design,
+.about-me-skill-text-responsive,
+.about-me-skill-text-security {
   font-weight: 500;
   color: #3CACAE; }
 
@@ -536,7 +563,14 @@ nav label {
   .home-col-2 h1 {
     font-size: 35px; }
   .home-col-2 p {
-    font-size: 21px; } }
+    font-size: 21px; }
+  /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+  .about-me-h1 {
+    padding-top: 85%; } }
 
 /* 
 *************************
@@ -550,7 +584,14 @@ nav label {
     ************
     */
   .header-grid-navbar {
-    font-size: 17px; } }
+    font-size: 17px; }
+  /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+  .about-me-h1 {
+    padding-top: 90%; } }
 
 /* 
 *************************
@@ -583,6 +624,22 @@ nav label {
     width: 70%; }
   nav ul {
     gap: 12%; }
+  /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+  .about-me-h1 {
+    padding-top: 95%; }
+  .about-me-skill-design,
+  .about-me-skill-responsive,
+  .about-me-skill-security {
+    width: 80px;
+    height: 80px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 14px; }
   /*
     ************
     *  FOOTER  *
@@ -606,6 +663,18 @@ nav label {
     font-size: 29px; }
   .home-col-2 p {
     font-size: 17px; }
+  /* 
+    ****************
+    *  ABOUT PAGE  *
+    ****************
+    */
+  .about-me-h1 {
+    padding-top: 100%;
+    font-size: 46px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 13px; }
   /*
     ************
     *  FOOTER  *
@@ -665,15 +734,9 @@ nav label {
     *  ABOUT ME  *
     **************
     */
-  .about-me-grid-container {
-    grid-template-columns: 235px 380px;
-    grid-template-rows: 300px 300px; }
   .about-me-h1 {
-    padding: 38% 20% 30% 20%; }
-  .about-me-h2 {
-    padding: 45% 15% 2% 15%; }
-  .about-me-p {
-    padding: 0% 10% 5% 10%; } }
+    padding-top: 120%;
+    font-size: 42px; } }
 
 /* 
 ************************
@@ -699,20 +762,6 @@ nav label {
     font-size: 24px; }
   .home-col-2 p {
     font-size: 14px; }
-  /* 
-    **************
-    *  ABOUT ME  *
-    **************
-    */
-  .about-me-grid-container {
-    grid-template-columns: 235px 380px;
-    grid-template-rows: 300px 300px; }
-  .about-me-h1 {
-    padding: 38% 20% 30% 20%; }
-  .about-me-h2 {
-    padding: 45% 15% 2% 15%; }
-  .about-me-p {
-    padding: 0% 10% 5% 10%; }
   /*
     ************
     *  FOOTER  *
@@ -741,11 +790,30 @@ nav label {
     */
   .home-col-2 h1 {
     font-size: 22px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-h1 {
+    padding-top: 140%;
+    font-size: 37px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 10px; }
+  .about-me-skill-design,
+  .about-me-skill-responsive,
+  .about-me-skill-security {
+    width: 65px;
+    height: 65px; }
   /*
     ************
     *  FOOTER  *
     ************
     */
+  .footer-grid-container {
+    grid-template-columns: 30% 30% repeat(4, 10%); }
   .footer-grid-p-slogan {
     font-size: 11px; } }
 
@@ -797,6 +865,42 @@ nav label {
     font-size: 45px; }
   .home-col-2 p {
     font-size: 25px; }
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-grid-container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "about-me-h1" "about-me-col-3"; }
+  .about-me-h1 {
+    width: 100%;
+    height: 83px;
+    padding: 3%; }
+  .about-me-col-3 {
+    grid-template-columns: 100%;
+    grid-template-areas: "about-me-h2" "about-me-p" "about-me-skill-design" "about-me-skill-text-design" "about-me-skill-responsive" "about-me-skill-text-responsive" "about-me-skill-security" "about-me-skill-text-security";
+    padding: 20% 5%;
+    background-color: #D5F2EE;
+    row-gap: 4%; }
+  .about-me-h2 {
+    width: 100%;
+    padding: 0%;
+    background-color: #D5F2EE; }
+  .about-me-p {
+    width: 100%;
+    padding: 0%;
+    background-color: #D5F2EE; }
+  .about-me-skill-design,
+  .about-me-skill-responsive,
+  .about-me-skill-security {
+    width: 103px;
+    height: 108px; }
+  .about-me-skill-text-design,
+  .about-me-skill-text-responsive,
+  .about-me-skill-text-security {
+    font-size: 18px; }
   /*
     ************
     *  FOOTER  *
@@ -814,59 +918,19 @@ nav label {
 
 /* 
 ************************
-* MEGA QUERIES: 425px  *
+* MEGA QUERIES: 496px  *
 ************************
 */
-@media (max-width: 425px) {
-  /*
-    ************
-    *  HEADER  *
-    ************
+@media (max-width: 496px) {
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
     */
-  /*
-    .about-me-h1 {
-        width: 100%;
-        height: 83px;
-        padding: 3%;
-    }
-
-    .about-me-h2 {
-        width: 100%;
-        height: 100px;
-        padding: 5%;
-        margin-top: -51%;
-    }
-
-    .about-me-p {
-        padding: 8%;
-        margin-top: -98%;
-        width: 100%;
-    }
-
-    .about-me-grid-container{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas:
-        "about-me-h1"
-        "about-me-h2"
-        "about-me-p";
-        width: 100%;
-        justify-content: center;
-        align-content: center;
-        background-color: #D5F2EE;
-    }
-
-    .about-me-skills-grid-container {
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-        background-color: #EFFEFD;
-        padding: 40px 0px 40px 0px;
-        width: 100%;
-    }*/
+  .about-me-h1 {
+    padding: 4%; }
+  .about-me-col-3 {
+    row-gap: 3%; }
   /*
     ************
     *  FOOTER  *
@@ -896,6 +960,25 @@ nav label {
 
 /* 
 ************************
+* MEGA QUERIES: 425px  *
+************************
+*/
+/* 
+************************
+* MEGA QUERIES: 402px  *
+************************
+*/
+@media (max-width: 402px) {
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    padding: 21% 7%; } }
+
+/* 
+************************
 * MEGA QUERIES: 375px  *
 ************************
 */
@@ -909,20 +992,15 @@ nav label {
     font-size: 40px; }
   .home-col-2 p {
     font-size: 23px; }
-  /*
-    .about-me-h2 {
-        width: 100%;
-        height: 100px;
-        padding: 7% 9%;
-        margin-top: -58%;
-        font-size: 20px;
-    }
-
-    .about-me-p {
-        padding: 8%;
-        margin-top: -112%;
-        width: 100%;
-    }*/
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    row-gap: 2%; }
+  .about-me-h1 {
+    padding: 6%; }
   /*
     ************
     *  FOOTER  *
@@ -937,15 +1015,6 @@ nav label {
 ************************
 */
 @media (max-width: 320px) {
-  /*
-    ************
-    *  HEADER  *
-    ************
-    */
-  /*.header-grid-container{
-        height: 300px;
-        grid-template-columns: 100%;
-    }*/
   /* 
     ***************
     *  HOME PAGE  *
@@ -955,52 +1024,13 @@ nav label {
     font-size: 35px; }
   .home-col-2 p {
     font-size: 21px; }
-  /*
-    .about-me-grid-container{
-        grid-template-columns: 100%;
-        width: 100%;
-        height: 1000px;
-        grid-template-areas:
-        "about-me-h1"
-        "about-me-h2"
-        "about-me-p";
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h1{
-        width: 320px;
-        height: 83px;
-        padding: 3%;
-        margin-top: -200px;
-    }
-
-    .span{
-        background-color: #EFFEFD;
-    }
-    
-    .about-me-h2{
-        width: 320px;
-        height: 200px;
-        padding: 12% 15% 2% 15%;
-        margin-top: -125%;
-    }
-    
-    .about-me-p{
-        padding: 0% 10% 5% 10%;
-        margin-top: -157%;
-    }
-
-    .about-me-skills-grid-container{
-        grid-template-columns: 30% 30% 30%;
-        padding: 20px 0px 20px 0px;
-        column-gap: 10px;
-        margin-top: -97%;
-    }
-
-    .about-me-skill{
-        width: 50px;
-        height: 50px;
-    }*/
+  /* 
+    **************
+    *  ABOUT ME  *
+    **************
+    */
+  .about-me-col-3 {
+    padding: 25% 5%; }
   /*
     ************
     *  FOOTER  *
